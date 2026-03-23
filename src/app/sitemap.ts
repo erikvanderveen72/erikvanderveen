@@ -35,16 +35,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/jetgpt`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/chatgpt-tips-tekstschrijven`,
+      url: `${baseUrl}/blog/chatgpt-tips-tekstschrijven`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.9,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/blog`,
@@ -78,6 +72,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/blog/10-grootste-misverstanden-chatgpt`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/downloads`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,

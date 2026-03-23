@@ -7,10 +7,8 @@ import { Menu, X, Shield, ChevronDown } from 'lucide-react';
 const trainingen = [
   { label: 'ChatGPT Training', href: '/chatgpt', description: 'Leer effectief prompten en AI inzetten' },
   { label: 'Google Gemini Training', href: '/gemini', description: 'Google\'s krachtige AI-model beheersen' },
-  { label: 'Microsoft Co-Pilot Training', href: '/copilot', description: 'AI-integratie in Microsoft 365' },
+  { label: 'Microsoft Copilot Training', href: '/copilot', description: 'AI-integratie in Microsoft 365' },
   { label: 'Claude Training', href: '/claude', description: 'Anthropic\'s Claude voor professionals' },
-  { label: 'JetGPT Training', href: '/jetgpt', description: 'JetGPT optimaal benutten' },
-  { label: '33 ChatGPT-tips', href: '/chatgpt-tips-tekstschrijven', description: 'Praktische handleiding voor tekstschrijven' },
 ];
 
 export default function Navbar() {
@@ -76,6 +74,10 @@ export default function Navbar() {
               isScrolled ? 'text-stone-700 hover:text-primary hover:bg-primary-light' : 'text-stone-300 hover:text-white hover:bg-white/10'
             }`}>Blog</Link>
 
+            <Link href="/downloads" className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+              isScrolled ? 'text-stone-700 hover:text-primary hover:bg-primary-light' : 'text-stone-300 hover:text-white hover:bg-white/10'
+            }`}>Downloads</Link>
+
             <Link href="/over-erik" className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
               isScrolled ? 'text-stone-700 hover:text-primary hover:bg-primary-light' : 'text-stone-300 hover:text-white hover:bg-white/10'
             }`}>Over Erik</Link>
@@ -120,6 +122,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Link href="/blog" onClick={() => setIsMobileOpen(false)} className="block px-4 py-3 rounded-lg text-stone-700 font-medium hover:bg-primary-light">Blog</Link>
+            <Link href="/downloads" onClick={() => setIsMobileOpen(false)} className="block px-4 py-3 rounded-lg text-stone-700 font-medium hover:bg-primary-light">Downloads</Link>
             <Link href="/over-erik" onClick={() => setIsMobileOpen(false)} className="block px-4 py-3 rounded-lg text-stone-700 font-medium hover:bg-primary-light">Over Erik</Link>
             <Link href="/contact" onClick={() => setIsMobileOpen(false)} className="block px-4 py-3 rounded-lg text-stone-700 font-medium hover:bg-primary-light">Contact</Link>
             <Link href="/contact" onClick={() => setIsMobileOpen(false)} className="block mx-4 mt-2 bg-accent text-white text-center px-5 py-3 rounded-full font-semibold">

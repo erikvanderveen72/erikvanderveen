@@ -7,15 +7,15 @@ const columns = [
     links: [
       { label: 'ChatGPT Training', href: '/chatgpt' },
       { label: 'Google Gemini Training', href: '/gemini' },
-      { label: 'Microsoft Co-Pilot Training', href: '/copilot' },
+      { label: 'Microsoft Copilot Training', href: '/copilot' },
       { label: 'Claude Training', href: '/claude' },
-      { label: 'JetGPT Training', href: '/jetgpt' },
     ],
   },
   {
     title: 'Informatie',
     links: [
       { label: 'Blog', href: '/blog' },
+      { label: 'Downloads', href: '/downloads' },
       { label: 'Over Erik', href: '/over-erik' },
       { label: 'Contact', href: '/contact' },
       { label: 'Veelgestelde vragen', href: '/#faq' },

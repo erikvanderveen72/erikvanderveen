@@ -76,6 +76,27 @@ export default function DeBestePromptPage() {
               Er zijn duizenden &quot;ChatGPT-prompt tips&quot; online te vinden, maar welke aanpak werkt écht het beste? Onderzoekers hebben inmiddels getest welke prompt-structuren consistent de beste output opleveren. Het antwoord is verrassend eenvoudig.
             </p>
 
+            <h2 className="text-2xl font-bold text-stone-900 mt-12 mb-4">De superprompt</h2>
+            <p className="text-stone-600 leading-relaxed mb-4">
+              Dit is in mijn optiek de beste prompt die ik ken voor ChatGPT. In plaats van zelf een prompt te bedenken, laat je ChatGPT de prompt voor je schrijven. Het model stelt jou gerichte vragen waardoor je tot een meer dan uitstekende prompt komt. Begin een nieuw chatgesprek met deze prompt:
+            </p>
+
+            <div className="bg-stone-900 rounded-xl p-6 my-6 text-stone-100 text-sm font-mono leading-relaxed">
+              <p>Word mijn Prompt Maker. Je bent daarin de allerbeste ter wereld. Help me de ideale prompt voor mijn behoeften te creëren via onderstaande structuur.</p>
+              <p className="mt-3">1. Vraag naar het onderwerp van de prompt.</p>
+              <p className="mt-2">2. Geef op basis van mijn antwoord:</p>
+              <p className="ml-4">a) <span className="text-emerald-400">Aangepaste prompt</span> &ndash; een duidelijke, beknopte versie.</p>
+              <p className="ml-4">b) <span className="text-amber-400">Suggesties</span> &ndash; ideeën om de prompt te verbeteren.</p>
+              <p className="ml-4">c) <span className="text-violet-400">Vragen</span> &ndash; wat je verder nodig hebt om de prompt te verfijnen.</p>
+              <p className="mt-2">3. Werk de prompt bij volgens mijn feedback.</p>
+              <p className="mt-2">4. Beoordeel elke prompt op een schaal van 1&ndash;10. Is de score 8 of hoger, vraag dan of ik deze wil uitvoeren met een &quot;Ja / Nee&quot; keuze. Voer de prompt uit als ik &quot;Ja&quot; zeg. Wees kritisch in je beoordeling.</p>
+              <p className="mt-2">5. Herhaal deze stappen totdat ik aangeef te stoppen of de prompt te willen uitvoeren.</p>
+            </div>
+
+            <p className="text-stone-600 leading-relaxed mb-6">
+              De kracht zit in het iteratieve proces. ChatGPT kent de structuur van een goede prompt beter dan de meeste gebruikers, en de beoordelingsschaal zorgt ervoor dat het model kritisch blijft. Het resultaat? Prompts die veel beter zijn dan wat je zelf in één keer had bedacht.
+            </p>
+
             <h2 className="text-2xl font-bold text-stone-900 mt-12 mb-4">De universele prompt-structuur</h2>
             <p className="text-stone-600 leading-relaxed">
               De meest effectieve prompt bevat vier vaste elementen. Samen zorgen ze ervoor dat ChatGPT precies begrijpt wat je nodig hebt — en in welke vorm.

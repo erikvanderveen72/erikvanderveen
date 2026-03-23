@@ -56,7 +56,7 @@ const misverstanden = [
   },
   {
     mythe: 'Alle AI-tools zijn hetzelfde',
-    realiteit: 'ChatGPT, Claude, Gemini, Co-Pilot en JetGPT hebben elk hun eigen sterktes en beperkingen. ChatGPT is sterk in veelzijdigheid, Claude in langere teksten en analyse, Gemini in Google-integratie, Co-Pilot in Microsoft 365. De juiste tool kiezen maakt een groot verschil.',
+    realiteit: 'ChatGPT, Claude, Gemini en Copilot hebben elk hun eigen sterktes en beperkingen. ChatGPT is sterk in veelzijdigheid, Claude in langere teksten en analyse, Gemini in Google-integratie, Copilot in Microsoft 365. De juiste tool kiezen maakt een groot verschil.',
   },
 ];
 

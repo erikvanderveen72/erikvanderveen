@@ -269,8 +269,8 @@ export default function ChatGPTTipsPage() {
         badge="Praktische handleiding — 2026"
         showBreadcrumbs
         breadcrumbs={[
-          { label: 'Trainingen', href: '/#trainingen' },
-          { label: '33 ChatGPT-tips voor Tekstschrijven', href: '/chatgpt-tips-tekstschrijven' },
+          { label: 'Blog', href: '/blog' },
+          { label: '33 ChatGPT-tips voor Tekstschrijven', href: '/blog/chatgpt-tips-tekstschrijven' },
         ]}
       />
 

@@ -70,9 +70,8 @@ export default function ContactForm() {
           <option value="">Selecteer een training</option>
           <option value="chatgpt">ChatGPT Training</option>
           <option value="gemini">Google Gemini Training</option>
-          <option value="copilot">Microsoft Co-Pilot Training</option>
+          <option value="copilot">Microsoft Copilot Training</option>
           <option value="claude">Claude Training</option>
-          <option value="jetgpt">JetGPT Training</option>
           <option value="meerdere">Meerdere trainingen / op maat</option>
         </select>
       </div>

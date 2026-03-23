@@ -8,8 +8,8 @@ const inter = Inter({ variable: '--font-inter', subsets: ['latin'], display: 'sw
 
 export const metadata: Metadata = {
   title: { template: '%s | Erik van der Veen — AI Training', default: 'AI Trainingen voor Organisaties 2026 | Erik van der Veen' },
-  description: 'In-company AI trainingen: ChatGPT, Google Gemini, Microsoft Co-Pilot, Claude en JetGPT. 175+ trainingen ervaring. Direct toepasbaar, op maat gemaakt voor jouw team.',
-  keywords: ['AI training', 'ChatGPT training', 'Gemini training', 'Co-Pilot training', 'Claude training', 'JetGPT training', 'AI cursus', 'AI workshop', 'Erik van der Veen'],
+  description: 'In-company AI trainingen: ChatGPT, Google Gemini, Microsoft Copilot en Claude. 175+ trainingen ervaring. Direct toepasbaar, op maat gemaakt voor jouw team.',
+  keywords: ['AI training', 'ChatGPT training', 'Gemini training', 'Copilot training', 'Claude training', 'AI cursus', 'AI workshop', 'Erik van der Veen'],
   metadataBase: new URL('https://erikvanderveen.nl'),
   openGraph: {
     type: 'website',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     url: 'https://erikvanderveen.nl',
     siteName: 'Erik van der Veen — AI Training',
     title: 'AI Trainingen voor Organisaties 2026 | Erik van der Veen',
-    description: 'In-company AI trainingen: ChatGPT, Google Gemini, Microsoft Co-Pilot, Claude en JetGPT. 175+ trainingen ervaring.',
+    description: 'In-company AI trainingen: ChatGPT, Google Gemini, Microsoft Copilot en Claude. 175+ trainingen ervaring.',
     images: [{ url: 'https://chatgptexpert.com/og-image.png', width: 1200, height: 630 }],
   },
   twitter: { card: 'summary_large_image' },

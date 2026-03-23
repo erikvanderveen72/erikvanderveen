@@ -12,9 +12,9 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Microsoft Co-Pilot Training 2026 | AI Training Platform van Erik van der Veen',
+  title: 'Microsoft Copilot Training 2026 | AI Training Platform van Erik van der Veen',
   description:
-    'Microsoft Co-Pilot training: Word, Excel, PowerPoint, Outlook, Teams integratie en enterprise features. Verhoog productiviteit in Microsoft 365.',
+    'Microsoft Copilot training: Word, Excel, PowerPoint, Outlook, Teams integratie en enterprise features. Verhoog productiviteit in Microsoft 365.',
 };
 
 export const revalidate = 3600;
@@ -23,9 +23,9 @@ export default function CopilotPage() {
   const learningItems = [
     {
       icon: FileText,
-      title: 'Word Co-Pilot Mastery',
+      title: 'Word Copilot Mastery',
       description:
-        'Schrijf, bewerk en optimaliseer documenten met Co-Pilot. Automatiseer content creatie en verbetering in Word.',
+        'Schrijf, bewerk en optimaliseer documenten met Copilot. Automatiseer content creatie en verbetering in Word.',
     },
     {
       icon: BarChart3,
@@ -49,18 +49,18 @@ export default function CopilotPage() {
       icon: Zap,
       title: 'Teams Collaboration Features',
       description:
-        'Verbeter teamwork, notuleer vergaderingen automatisch en verbeter samenwerking met Co-Pilot in Teams.',
+        'Verbeter teamwork, notuleer vergaderingen automatisch en verbeter samenwerking met Copilot in Teams.',
     },
     {
       icon: CheckCircle,
       title: 'Enterprise Security & Governance',
       description:
-        'Implementeer Co-Pilot veilig in je organisatie met data protection en compliance in Microsoft 365.',
+        'Implementeer Copilot veilig in je organisatie met data protection en compliance in Microsoft 365.',
     },
   ];
 
   const pricingItems = [
-    'Volledige Microsoft Co-Pilot masterclass',
+    'Volledige Microsoft Copilot masterclass',
     'Word documentbewerking en optimalisatie',
     'Excel data-analyse en automatisatie',
     'PowerPoint presentation design',
@@ -73,47 +73,47 @@ export default function CopilotPage() {
 
   const faqItems = [
     {
-      question: 'Welke Microsoft 365 applicaties ondersteunen Co-Pilot?',
+      question: 'Welke Microsoft 365 applicaties ondersteunen Copilot?',
       answer:
-        'Co-Pilot is beschikbaar in Word, Excel, PowerPoint, Outlook, Teams, OneNote en meer. In de training behandelen we de meest gebruikte applicaties met praktische voorbeelden.',
+        'Copilot is beschikbaar in Word, Excel, PowerPoint, Outlook, Teams, OneNote en meer. In de training behandelen we de meest gebruikte applicaties met praktische voorbeelden.',
     },
     {
-      question: 'Wat zijn de systeemvereisten voor Microsoft Co-Pilot?',
+      question: 'Wat zijn de systeemvereisten voor Microsoft Copilot?',
       answer:
-        'Je hebt Microsoft 365 subscription en een Co-Pilot Pro-licentie nodig (of enterprise Co-Pilot). We bespreken alle opties, kosten en implementatie.',
+        'Je hebt Microsoft 365 subscription en een Copilot Pro-licentie nodig (of enterprise Copilot). We bespreken alle opties, kosten en implementatie.',
     },
     {
-      question: 'Kan ik Co-Pilot gebruiken voor data-analyse in Excel?',
+      question: 'Kan ik Copilot gebruiken voor data-analyse in Excel?',
       answer:
-        'Ja, Co-Pilot in Excel is krachtig voor data-analyse. Je kunt vragen stellen over je data, formules laten genereren en visualisaties maken. Dit is een hoogtepunt van onze training.',
+        'Ja, Copilot in Excel is krachtig voor data-analyse. Je kunt vragen stellen over je data, formules laten genereren en visualisaties maken. Dit is een hoogtepunt van onze training.',
     },
     {
-      question: 'Hoe zorg ik voor data security bij Co-Pilot in mijn organisatie?',
+      question: 'Hoe zorg ik voor data security bij Copilot in mijn organisatie?',
       answer:
         'Microsoft heeft sterke beveiligingsmaatregelen. We behandelen data privacy, compliance, permissions en best practices voor enterprise-implementatie.',
     },
     {
-      question: 'Kan ik Co-Pilot gebruiken voor vergaderingen in Teams?',
+      question: 'Kan ik Copilot gebruiken voor vergaderingen in Teams?',
       answer:
-        'Ja, Co-Pilot in Teams kan vergaderingen samenvatten, actiepunten identificeren en notuleren. Dit bespaart veel tijd en verhoogt productiviteit aanzienlijk.',
+        'Ja, Copilot in Teams kan vergaderingen samenvatten, actiepunten identificeren en notuleren. Dit bespaart veel tijd en verhoogt productiviteit aanzienlijk.',
     },
     {
-      question: 'Wat is de kostprijs van Microsoft Co-Pilot?',
+      question: 'Wat is de kostprijs van Microsoft Copilot?',
       answer:
-        'Co-Pilot Pro kost ongeveer €20/maand individueel. Enterprise-opties hebben andere prijzen. We bespreken ROI en welke optie best voor jou past.',
+        'Copilot Pro kost ongeveer €20/maand individueel. Enterprise-opties hebben andere prijzen. We bespreken ROI en welke optie best voor jou past.',
     },
   ];
 
   const breadcrumbs = [
     { label: 'Home', href: '/' },
     { label: 'Training', href: '/training' },
-    { label: 'Microsoft Co-Pilot Training', href: '/copilot' },
+    { label: 'Microsoft Copilot Training', href: '/copilot' },
   ];
 
   return (
     <>
       <PageHero
-        title="Microsoft Co-Pilot Training 2026"
+        title="Microsoft Copilot Training 2026"
         subtitle="Beheers AI in Microsoft 365 voor maximale werktempo"
         highlightedSubtitle="Word • Excel • PowerPoint • Outlook • Teams • Enterprise"
         badge="Actueel 2026"
@@ -128,7 +128,7 @@ export default function CopilotPage() {
             Wat leer je in deze training?
           </h2>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
-            Ontdek hoe je Co-Pilot kunt inzetten in alle Microsoft 365 applicaties
+            Ontdek hoe je Copilot kunt inzetten in alle Microsoft 365 applicaties
             om je dagelijkse werk efficiënter te maken.
           </p>
         </div>
@@ -157,10 +157,10 @@ export default function CopilotPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-4">
-              Microsoft Co-Pilot Training Package
+              Microsoft Copilot Training Package
             </h2>
             <p className="text-lg text-text-muted mb-8">
-              Een comprehensive training om Co-Pilot in alle Microsoft 365
+              Een comprehensive training om Copilot in alle Microsoft 365
               applicaties optimaal in te zetten. Perfect voor bedrijven en
               individuals.
             </p>
@@ -192,7 +192,7 @@ export default function CopilotPage() {
             Veelgestelde vragen
           </h2>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
-            Vragen over Microsoft Co-Pilot en hoe het jouw Microsoft 365
+            Vragen over Microsoft Copilot en hoe het jouw Microsoft 365
             workflow verbetert.
           </p>
         </div>
@@ -223,10 +223,10 @@ export default function CopilotPage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div className="bg-gradient-to-r from-primary to-accent rounded-lg p-8 md:p-12 text-center text-white">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Klaar om Co-Pilot volledig te benutten?
+            Klaar om Copilot volledig te benutten?
           </h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-95">
-            Duizenden professionals gebruiken Co-Pilot om hun Microsoft 365
+            Duizenden professionals gebruiken Copilot om hun Microsoft 365
             efficiëntie drastisch te verhogen. Begin nu met jouw training.
           </p>
           <Link

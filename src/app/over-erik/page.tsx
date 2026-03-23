@@ -54,8 +54,7 @@ export default function OverErikPage() {
                 <p>
                   Met meer dan 175 trainingen onder zijn riem, van kleinere teams tot grote corporate
                   organisaties, heeft Erik aangetoond dat hij effectief kennis kan overdragen en teams
-                  kan inspireren. Zijn LinkedIn posts bereiken regelmatig honderdduizenden views, met
-                  een totaal bereik van 950K+ weergaven.
+                  kan inspireren.
                 </p>
 
                 <p className="text-stone-900 font-semibold pt-2">
@@ -216,7 +215,7 @@ export default function OverErikPage() {
               <div>
                 <div className="bg-accent bg-opacity-10 rounded-lg p-6 border border-accent border-opacity-20">
                   <h3 className="text-lg font-semibold text-stone-900 mb-2">
-                    22K+ LinkedIn followers & 950K post views
+                    22K+ LinkedIn followers
                   </h3>
                   <p className="text-text-muted">
                     Gewaardeerd expert in de AI-community. Regelmatig uitgenodigd voor spreekbeurten

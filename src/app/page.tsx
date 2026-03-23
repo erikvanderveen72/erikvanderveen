@@ -21,7 +21,7 @@ const trainingen = [
     description: 'Google\'s krachtige AI-model integreren in je workflow. Ideaal voor teams die al met Google Workspace werken.',
   },
   {
-    title: 'Microsoft Co-Pilot Training',
+    title: 'Microsoft Copilot Training',
     href: '/copilot',
     icon: Cpu,
     color: 'from-sky-50 to-sky-100',
@@ -35,14 +35,6 @@ const trainingen = [
     color: 'from-violet-50 to-violet-100',
     iconColor: 'text-violet-600',
     description: 'Anthropic\'s Claude voor diepgaande analyse, lange documenten en complexe taken. De AI voor professionals.',
-  },
-  {
-    title: 'JetGPT Training',
-    href: '/jetgpt',
-    icon: Zap,
-    color: 'from-amber-50 to-amber-100',
-    iconColor: 'text-amber-600',
-    description: 'Ontdek de mogelijkheden van JetGPT en leer hoe je deze AI-tool optimaal inzet voor jouw werkzaamheden.',
   },
 ];
 
@@ -67,7 +59,7 @@ const klanten = [
 
 const faqItems = [
   { question: 'Voor wie zijn de AI trainingen geschikt?', answer: 'De trainingen zijn geschikt voor iedereen die professioneel met AI wil werken. Van marketing- en communicatieteams tot HR, finance, management en IT. Elke training wordt volledig afgestemd op het niveau en de functie van de deelnemers.' },
-  { question: 'Welke AI-tools worden behandeld?', answer: 'We bieden trainingen aan voor ChatGPT, Google Gemini, Microsoft Co-Pilot, Claude (Anthropic) en JetGPT. Je kunt kiezen voor een training gericht op één tool, of een breder overzicht van meerdere AI-tools.' },
+  { question: 'Welke AI-tools worden behandeld?', answer: 'We bieden trainingen aan voor ChatGPT, Google Gemini, Microsoft Copilot en Claude (Anthropic). Je kunt kiezen voor een training gericht op één tool, of een breder overzicht van meerdere AI-tools.' },
   { question: 'Hoeveel kost een AI training?', answer: 'De in-company training kost €975 excl. BTW per sessie. Dit is inclusief reistijd, reiskosten, een telefonische intake vooraf en op maat gemaakt programma. En niet tevreden? Dan geen factuur!' },
   { question: 'Hoe lang duurt een training?', answer: 'Elke training duurt 3 uur. Dit is compact genoeg om in een ochtend of middag te passen, maar uitgebreid genoeg voor echte diepgang met praktijkoefeningen.' },
   { question: 'Kan de training ook online gegeven worden?', answer: 'Ja, alle trainingen kunnen zowel fysiek op locatie als online gegeven worden. Beide varianten zijn interactief en hands-on.' },
@@ -102,7 +94,7 @@ export default function HomePage() {
               </p>
 
               <p className="text-stone-400 text-lg sm:text-xl mb-4 max-w-xl leading-relaxed">
-                In-company AI trainingen die jullie team binnen 3 uur direct productiever maken. ChatGPT, Gemini, Co-Pilot, Claude en JetGPT — op maat voor jouw organisatie.
+                In-company AI trainingen die jullie team binnen 3 uur direct productiever maken. ChatGPT, Gemini, Copilot en Claude — op maat voor jouw organisatie.
               </p>
 
               <p className="text-accent font-semibold text-lg mb-8">
@@ -227,7 +219,7 @@ export default function HomePage() {
                 Ik begon met AI-tools vanaf de eerste dag dat ChatGPT uitkwam. Al snel begon ik erover te posten op LinkedIn en zagen ruim 950.000 mensen mijn posts. Die enorme interesse toonde aan dat er een grote behoefte was aan kennis over AI.
               </p>
               <p className="text-stone-600 leading-relaxed mb-6">
-                Inmiddels heb ik meer dan 175 trainingen gegeven aan organisaties van MKB tot grote corporates. Met 25 jaar ervaring in online marketing en 22.000+ LinkedIn volgers deel ik mijn praktijkkennis in inspirerende, hands-on sessies over ChatGPT, Gemini, Co-Pilot, Claude en JetGPT.
+                Inmiddels heb ik meer dan 175 trainingen gegeven aan organisaties van MKB tot grote corporates. Met 25 jaar ervaring in online marketing en 22.000+ LinkedIn volgers deel ik mijn praktijkkennis in inspirerende, hands-on sessies over ChatGPT, Gemini, Copilot en Claude.
               </p>
               <Link href="/over-erik" className="inline-flex items-center gap-2 text-accent font-semibold hover:gap-4 transition-all">
                 Meer over Erik <ArrowRight size={16} />

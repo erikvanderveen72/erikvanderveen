@@ -18,6 +18,14 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: 'chatgpt-tips-tekstschrijven',
+    title: '33 ChatGPT-tips voor Tekstschrijven',
+    excerpt: 'Van het geven van context tot het trainen van je eigen schrijfstijl. Alles wat je nodig hebt om AI effectief in te zetten voor beter schrijven.',
+    date: '2025-07-01',
+    readTime: '12 min',
+    category: 'Handleiding',
+  },
+  {
     slug: '12-geavanceerde-chatgpt-tips',
     title: '12 Geavanceerde ChatGPT-tips voor Professionals',
     excerpt: 'Ga verder dan de basis. Deze 12 geavanceerde technieken tillen je ChatGPT-gebruik naar een hoger niveau — van rolgebaseerde prompts tot ketenprompting.',
