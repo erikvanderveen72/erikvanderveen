@@ -10,6 +10,7 @@ const trainingen = [
   { label: 'Microsoft Co-Pilot Training', href: '/copilot', description: 'AI-integratie in Microsoft 365' },
   { label: 'Claude Training', href: '/claude', description: 'Anthropic\'s Claude voor professionals' },
   { label: 'JetGPT Training', href: '/jetgpt', description: 'JetGPT optimaal benutten' },
+  { label: '33 ChatGPT-tips', href: '/chatgpt-tips-tekstschrijven', description: 'Praktische handleiding voor tekstschrijven' },
 ];
 
 export default function Navbar() {
