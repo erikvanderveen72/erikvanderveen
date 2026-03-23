@@ -15,6 +15,7 @@ const columns = [
   {
     title: 'Informatie',
     links: [
+      { label: 'Blog', href: '/blog' },
       { label: 'Over Erik', href: '/over-erik' },
       { label: 'Contact', href: '/contact' },
       { label: 'Veelgestelde vragen', href: '/#faq' },
