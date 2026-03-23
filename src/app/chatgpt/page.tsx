@@ -14,7 +14,7 @@ import {
 export const metadata: Metadata = {
   title: 'ChatGPT Training 2026 | AI Training Platform van Erik van der Veen',
   description:
-    'Leer ChatGPT beheersen: prompting, tekst generatie, data-analyse, custom GPTs en afbeelding generatie met DALL-E. Praktische training voor professionals.',
+    'Leer ChatGPT beheersen: prompting, tekstgeneratie, data-analyse, custom GPTs en beeldgeneratie. Praktische training voor professionals.',
 };
 
 export const revalidate = 3600;
@@ -41,9 +41,9 @@ export default function ChatGPTPage() {
     },
     {
       icon: Image,
-      title: 'DALL-E Afbeelding Generatie',
+      title: 'Afbeeldingen Genereren',
       description:
-        'Creëer professionele afbeeldingen, logo\'s en visuele content direct vanuit tekstbeschrijvingen.',
+        'Creëer professionele afbeeldingen, logo\'s en visuele content direct vanuit tekstbeschrijvingen met GPT-4o.',
     },
     {
       icon: CheckCircle,
@@ -62,7 +62,7 @@ export default function ChatGPTPage() {
   const pricingItems = [
     'Volledige ChatGPT masterclass',
     'Hands-on prompting workshop',
-    'DALL-E afbeelding generatie praktijk',
+    'Afbeeldingen genereren met GPT-4o',
     'Custom GPT bouwen en deployen',
     'API integratie en automatisering',
     'Data-analyse voorbeelden',
@@ -105,7 +105,6 @@ export default function ChatGPTPage() {
 
   const breadcrumbs = [
     { label: 'Home', href: '/' },
-    { label: 'Training', href: '/training' },
     { label: 'ChatGPT Training', href: '/chatgpt' },
   ];
 
@@ -114,7 +113,7 @@ export default function ChatGPTPage() {
       <PageHero
         title="ChatGPT Training 2026"
         subtitle="Beheers de krachtigste AI-tool ter wereld"
-        highlightedSubtitle="Prompting • Tekstgeneratie • Data-Analyse • Custom GPTs • DALL-E"
+        highlightedSubtitle="Prompting • Tekstgeneratie • Data-Analyse • Custom GPTs • Beeldgeneratie"
         badge="Actueel 2026"
         showBreadcrumbs
         breadcrumbs={breadcrumbs}

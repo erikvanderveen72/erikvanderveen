@@ -58,7 +58,7 @@ export default function AntiChatGPTPromptPage() {
             datePublished: '2025-06-24',
             dateModified: '2026-03-23',
             author: { '@type': 'Person', name: 'Erik van der Veen', url: 'https://erikvanderveen.nl/over-erik' },
-            publisher: { '@type': 'Organization', name: 'Erik van der Veen — AI Training', url: 'https://erikvanderveen.nl' },
+            publisher: { '@type': 'Organization', name: 'Erik van der Veen | AI Training', url: 'https://erikvanderveen.nl' },
             url: 'https://erikvanderveen.nl/blog/anti-chatgpt-prompt',
             description: 'Ontdek de anti-prompt techniek: vraag ChatGPT eerst om je prompt te bekritiseren voordat het een antwoord geeft.',
           }),

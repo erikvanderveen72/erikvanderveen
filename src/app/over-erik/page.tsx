@@ -69,7 +69,7 @@ export default function OverErikPage() {
               <div className="relative w-full max-w-sm">
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-lg border border-border">
                   <Image
-                    src="https://chatgptexpert.com/erikportret.jpg"
+                    src="/images/erikportret.jpg"
                     alt="Erik van der Veen"
                     width={500}
                     height={500}

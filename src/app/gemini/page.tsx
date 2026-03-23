@@ -105,7 +105,6 @@ export default function GeminiPage() {
 
   const breadcrumbs = [
     { label: 'Home', href: '/' },
-    { label: 'Training', href: '/training' },
     { label: 'Google Gemini Training', href: '/gemini' },
   ];
 

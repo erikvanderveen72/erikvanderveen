@@ -106,7 +106,6 @@ export default function ClaudePage() {
 
   const breadcrumbs = [
     { label: 'Home', href: '/' },
-    { label: 'Training', href: '/training' },
     { label: 'Claude Training', href: '/claude' },
   ];
 

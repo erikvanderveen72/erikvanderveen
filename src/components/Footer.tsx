@@ -83,7 +83,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-stone-800 pt-8 text-center">
           <p className="text-xs text-stone-500">
-            &copy; {new Date().getFullYear()} Erik van der Veen — AI Training & Consultancy. Alle rechten voorbehouden.
+            &copy; {new Date().getFullYear()} Erik van der Veen | AI Training & Consultancy. Alle rechten voorbehouden.
           </p>
         </div>
       </div>

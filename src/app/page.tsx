@@ -46,15 +46,16 @@ const stats = [
 ];
 
 const klanten = [
-  { naam: 'UWV', src: 'https://www.chatgptexpert.com/uwv-C7e6qYHO.png' },
-  { naam: 'Shell', src: 'https://www.chatgptexpert.com/shell-DUOu-axY.png' },
-  { naam: 'Rabobank', src: 'https://www.chatgptexpert.com/rabobank-DnhPPgNy.png' },
-  { naam: 'HelloFresh', src: 'https://www.chatgptexpert.com/hellofresh-C5jhxbbH.webp' },
-  { naam: 'De Goudse', src: 'https://www.chatgptexpert.com/degoudse-B0XP4CPP.webp' },
-  { naam: 'Promovendum', src: 'https://www.chatgptexpert.com/download%20(1).png' },
-  { naam: 'Hanzehogeschool', src: 'https://www.chatgptexpert.com/hanze-BvxE-lDr.png' },
-  { naam: 'Veneta.com', src: 'https://www.chatgptexpert.com/veneta-RjG3kAb4.webp' },
-  { naam: 'Van Doorne', src: 'https://www.chatgptexpert.com/vandoorne-1GlwzI6I.png' },
+  { naam: 'UWV', src: '/images/klanten/uwv.png' },
+  { naam: 'Shell', src: '/images/klanten/shell.png' },
+  { naam: 'Rabobank', src: '/images/klanten/rabobank.png', viaWesthaghe: true },
+  { naam: 'HelloFresh', src: '/images/klanten/hellofresh.webp', viaWesthaghe: true },
+  { naam: 'SPIE', src: '/images/klanten/spie.png', viaWesthaghe: true },
+  { naam: 'De Goudse', src: '/images/klanten/degoudse.webp' },
+  { naam: 'Promovendum', src: '/images/klanten/promovendum.png' },
+  { naam: 'Hanzehogeschool', src: '/images/klanten/hanze.png' },
+  { naam: 'Veneta.com', src: '/images/klanten/veneta.webp' },
+  { naam: 'Van Doorne', src: '/images/klanten/vandoorne.png' },
 ];
 
 const faqItems = [
@@ -120,7 +121,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-violet-500/20 to-orange-500/20 rounded-3xl blur-2xl" />
                 <Image
-                  src="https://chatgptexpert.com/erikportret.jpg"
+                  src="/images/erikportret.jpg"
                   alt="Erik van der Veen — AI Trainer"
                   width={500}
                   height={600}
@@ -139,13 +140,15 @@ export default function HomePage() {
           <p className="text-center text-stone-400 text-xs font-semibold uppercase tracking-widest mb-8">
             AI trainingen gegeven aan toonaangevende organisaties
           </p>
-          <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-6 items-center">
+          <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-10 gap-6 items-center">
             {klanten.map((klant) => (
-              <div key={klant.naam} className="flex items-center justify-center p-3 bg-stone-50 rounded-xl">
+              <div key={klant.naam} className="relative flex items-center justify-center p-3 bg-stone-50 rounded-xl">
                 <Image src={klant.src} alt={klant.naam} width={120} height={40} className="h-8 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity" unoptimized />
+                {klant.viaWesthaghe && <span className="absolute -bottom-1 right-1 text-[9px] text-stone-400">*</span>}
               </div>
             ))}
           </div>
+          <p className="text-center text-stone-400 text-[10px] mt-4">* Namens Westhaghe</p>
         </div>
       </section>
 
@@ -200,7 +203,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-violet-100 to-orange-100 rounded-3xl" />
               <Image
-                src="https://chatgptexpert.com/erikportret.jpg"
+                src="/images/erikportret.jpg"
                 alt="Erik van der Veen - AI Trainer"
                 width={500}
                 height={600}

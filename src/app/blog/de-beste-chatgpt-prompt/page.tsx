@@ -57,7 +57,7 @@ export default function DeBestePromptPage() {
             datePublished: '2025-06-11',
             dateModified: '2026-03-23',
             author: { '@type': 'Person', name: 'Erik van der Veen', url: 'https://erikvanderveen.nl/over-erik' },
-            publisher: { '@type': 'Organization', name: 'Erik van der Veen — AI Training', url: 'https://erikvanderveen.nl' },
+            publisher: { '@type': 'Organization', name: 'Erik van der Veen | AI Training', url: 'https://erikvanderveen.nl' },
             url: 'https://erikvanderveen.nl/blog/de-beste-chatgpt-prompt',
           }),
         }}

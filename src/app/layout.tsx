@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 const inter = Inter({ variable: '--font-inter', subsets: ['latin'], display: 'swap' });
 
 export const metadata: Metadata = {
-  title: { template: '%s | Erik van der Veen — AI Training', default: 'AI Trainingen voor Organisaties 2026 | Erik van der Veen' },
+  title: { template: '%s | Erik van der Veen | AI Training', default: 'AI Trainingen voor Organisaties 2026 | Erik van der Veen' },
   description: 'In-company AI trainingen: ChatGPT, Google Gemini, Microsoft Copilot en Claude. 175+ trainingen ervaring. Direct toepasbaar, op maat gemaakt voor jouw team.',
   keywords: ['AI training', 'ChatGPT training', 'Gemini training', 'Copilot training', 'Claude training', 'AI cursus', 'AI workshop', 'Erik van der Veen'],
   metadataBase: new URL('https://erikvanderveen.nl'),
@@ -15,10 +15,10 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'nl_NL',
     url: 'https://erikvanderveen.nl',
-    siteName: 'Erik van der Veen — AI Training',
+    siteName: 'Erik van der Veen | AI Training',
     title: 'AI Trainingen voor Organisaties 2026 | Erik van der Veen',
     description: 'In-company AI trainingen: ChatGPT, Google Gemini, Microsoft Copilot en Claude. 175+ trainingen ervaring.',
-    images: [{ url: 'https://chatgptexpert.com/og-image.png', width: 1200, height: 630 }],
+    images: [{ url: 'https://erikvanderveen.nl/images/og-image.png', width: 1200, height: 630 }],
   },
   twitter: { card: 'summary_large_image' },
   alternates: { canonical: 'https://erikvanderveen.nl', languages: { 'nl-NL': 'https://erikvanderveen.nl' } },
@@ -40,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               '@graph': [
                 {
                   '@type': 'WebSite',
-                  name: 'Erik van der Veen — AI Training',
+                  name: 'Erik van der Veen | AI Training',
                   url: 'https://erikvanderveen.nl',
                   potentialAction: {
                     '@type': 'SearchAction',
@@ -50,7 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 },
                 {
                   '@type': 'Organization',
-                  name: 'Erik van der Veen — AI Training & Consultancy',
+                  name: 'Erik van der Veen | AI Training & Consultancy',
                   url: 'https://erikvanderveen.nl',
                   logo: 'https://erikvanderveen.nl/logo.png',
                   contactPoint: {
@@ -66,7 +66,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   name: 'Erik van der Veen',
                   url: 'https://erikvanderveen.nl/over-erik',
                   jobTitle: 'AI Trainer & Consultant',
-                  worksFor: { '@type': 'Organization', name: 'Erik van der Veen — AI Training' },
+                  worksFor: { '@type': 'Organization', name: 'Erik van der Veen | AI Training' },
                   sameAs: ['https://linkedin.com/in/erikvanderveen', 'https://chatgptexpert.com'],
                 },
               ],

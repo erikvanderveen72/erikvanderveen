@@ -80,7 +80,7 @@ export default function CopilotPage() {
     {
       question: 'Wat zijn de systeemvereisten voor Microsoft Copilot?',
       answer:
-        'Je hebt een Microsoft 365-abonnement en een Copilot-licentie nodig. Copilot Pro kost $20/maand voor individueel gebruik, zakelijke licenties starten vanaf $18/gebruiker/maand. We bespreken alle opties in de training.',
+        'Je hebt een Microsoft 365-abonnement en een Copilot-licentie nodig. Copilot Pro kost €22/maand voor individueel gebruik, zakelijke licenties starten vanaf €21/gebruiker/maand. We bespreken alle opties in de training.',
     },
     {
       question: 'Kan ik Copilot gebruiken voor data-analyse in Excel?',
@@ -100,13 +100,12 @@ export default function CopilotPage() {
     {
       question: 'Wat is de kostprijs van Microsoft Copilot?',
       answer:
-        'Copilot Pro kost $20/maand voor individueel gebruik. Zakelijke licenties starten vanaf $18/gebruiker/maand. We bespreken de ROI en welke optie het beste bij jouw situatie past.',
+        'Copilot Pro kost €22/maand voor individueel gebruik. Zakelijke licenties starten vanaf €21/gebruiker/maand. We bespreken de ROI en welke optie het beste bij jouw situatie past.',
     },
   ];
 
   const breadcrumbs = [
     { label: 'Home', href: '/' },
-    { label: 'Training', href: '/training' },
     { label: 'Microsoft Copilot Training', href: '/copilot' },
   ];
 
