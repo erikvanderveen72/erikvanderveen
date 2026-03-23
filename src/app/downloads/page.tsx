@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
-import { Download, FileText, ArrowRight } from 'lucide-react';
+import { Download, FileText, ArrowRight, AlertTriangle } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Downloads | Gratis AI-materialen',
@@ -81,6 +81,41 @@ export default function DownloadsPage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Toelichting */}
+          <div className="mt-12 bg-amber-50 border border-amber-200 rounded-2xl p-8">
+            <div className="flex items-center gap-3 mb-4">
+              <AlertTriangle size={20} className="text-amber-600" />
+              <h3 className="text-lg font-bold text-stone-900">Toelichting bij de cheatsheet</h3>
+            </div>
+            <div className="space-y-4 text-stone-700 leading-relaxed">
+              <p>
+                Deze cheatsheet is een handig startpunt, maar gebruik hem met de nodige nuance.
+                Een belangrijke kanttekening: voordat je ook maar één letter typt in Claude Code,
+                ben je al snel 200.000 tokens kwijt aan MCP-servers en instructies. Dat token-budget
+                is beperkt, dus wees je daarvan bewust.
+              </p>
+              <p>
+                Niet alles wat op de sheet staat heeft een MCP-server nodig. Het bestandssysteem
+                wordt bijvoorbeeld genoemd als &quot;populaire MCP-server&quot;, maar dat zit standaard
+                ingebouwd. Hetzelfde geldt voor de browser-integratie: Claude heeft een eigen
+                browser-extensie, daar heb je geen aparte MCP voor nodig. En tools zoals de
+                Playwright MCP kosten enorm veel context.
+              </p>
+              <p>
+                Over CLAUDE.md: de sheet raadt aan om er een te maken, maar wees kritisch. Het
+                overgrote deel van wat je erin zet is niet relevant voor elke prompt, terwijl het
+                wel elke keer wordt meegestuurd. Dat vreet tokens. Overweeg om instructies gewoon
+                in je prompt te zetten in plaats van in een configuratiebestand.
+              </p>
+              <p>
+                Tot slot: &quot;begin klein&quot; is een goed advies, maar pas op dat je ook klein
+                eindigt. Het risico is dat je begint met een simpele setup en vervolgens zoveel
+                configuratiebestanden en MCP-servers toevoegt dat je meer tijd kwijt bent aan het
+                managen van je AI-tool dan aan het daadwerkelijk schrijven van code.
+              </p>
+            </div>
           </div>
 
           {/* CTA */}
