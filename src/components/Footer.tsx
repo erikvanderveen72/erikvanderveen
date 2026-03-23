@@ -25,7 +25,6 @@ const columns = [
     title: 'Contact',
     links: [
       { label: '06 10 20 40 90', href: 'tel:0610204090' },
-      { label: 'info@erikvanderveen.nl', href: 'mailto:info@erikvanderveen.nl' },
       { label: 'LinkedIn', href: 'https://linkedin.com/in/erikvanderveen' },
     ],
   },

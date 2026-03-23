@@ -2,19 +2,18 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X, Shield, ChevronDown } from 'lucide-react';
+import { Menu, X, Shield } from 'lucide-react';
 
 const trainingen = [
-  { label: 'ChatGPT Training', href: '/chatgpt', description: 'Leer effectief prompten en AI inzetten' },
-  { label: 'Google Gemini Training', href: '/gemini', description: 'Google\'s krachtige AI-model beheersen' },
-  { label: 'Microsoft Copilot Training', href: '/copilot', description: 'AI-integratie in Microsoft 365' },
-  { label: 'Claude Training', href: '/claude', description: 'Anthropic\'s Claude voor professionals' },
+  { label: 'ChatGPT', href: '/chatgpt' },
+  { label: 'Claude', href: '/claude' },
+  { label: 'Gemini', href: '/gemini' },
+  { label: 'Copilot', href: '/copilot' },
 ];
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
-  const [showTrainingen, setShowTrainingen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -44,31 +43,11 @@ export default function Navbar() {
 
           {/* Desktop nav */}
           <div className="hidden lg:flex items-center gap-1">
-            <Link href="/" className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-              isScrolled ? 'text-stone-700 hover:text-primary hover:bg-primary-light' : 'text-stone-300 hover:text-white hover:bg-white/10'
-            }`}>Home</Link>
-
-            {/* Trainingen dropdown */}
-            <div className="relative group"
-              onMouseEnter={() => setShowTrainingen(true)}
-              onMouseLeave={() => setShowTrainingen(false)}
-            >
-              <button className={`flex items-center gap-1 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+            {trainingen.map((t) => (
+              <Link key={t.href} href={t.href} className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                 isScrolled ? 'text-stone-700 hover:text-primary hover:bg-primary-light' : 'text-stone-300 hover:text-white hover:bg-white/10'
-              }`}>
-                Trainingen <ChevronDown size={14} className={`transition-transform ${showTrainingen ? 'rotate-180' : ''}`} />
-              </button>
-              {showTrainingen && (
-                <div className="absolute top-full left-0 mt-1 w-72 bg-white rounded-xl shadow-xl border border-stone-100 py-2 z-50">
-                  {trainingen.map((t) => (
-                    <Link key={t.href} href={t.href} className="block px-4 py-3 hover:bg-primary-light transition-colors">
-                      <div className="font-medium text-stone-900 text-sm">{t.label}</div>
-                      <div className="text-xs text-stone-400 mt-0.5">{t.description}</div>
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
+              }`}>{t.label}</Link>
+            ))}
 
             <Link href="/downloads" className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
               isScrolled ? 'text-stone-700 hover:text-primary hover:bg-primary-light' : 'text-stone-300 hover:text-white hover:bg-white/10'
@@ -110,10 +89,8 @@ export default function Navbar() {
       {isMobileOpen && (
         <div className="lg:hidden bg-white border-t border-stone-100 shadow-xl rounded-b-2xl">
           <div className="px-4 py-4 space-y-1">
-            <Link href="/" onClick={() => setIsMobileOpen(false)} className="block px-4 py-3 rounded-lg text-stone-700 font-medium hover:bg-primary-light">Home</Link>
-            <div className="px-4 py-2 text-xs font-semibold text-stone-400 uppercase tracking-wider">Trainingen</div>
             {trainingen.map((t) => (
-              <Link key={t.href} href={t.href} onClick={() => setIsMobileOpen(false)} className="block px-6 py-2 rounded-lg text-stone-600 hover:bg-primary-light text-sm">
+              <Link key={t.href} href={t.href} onClick={() => setIsMobileOpen(false)} className="block px-4 py-3 rounded-lg text-stone-700 font-medium hover:bg-primary-light">
                 {t.label}
               </Link>
             ))}

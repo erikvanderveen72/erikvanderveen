@@ -14,7 +14,7 @@ import {
 export const metadata: Metadata = {
   title: 'Microsoft Copilot Training 2026 | AI Training Platform van Erik van der Veen',
   description:
-    'Microsoft Copilot training: Word, Excel, PowerPoint, Outlook, Teams integratie en enterprise features. Verhoog productiviteit in Microsoft 365.',
+    'Microsoft Copilot training: Word, Excel, PowerPoint, Outlook en Teams. Verhoog je productiviteit in Microsoft 365.',
 };
 
 export const revalidate = 3600;
@@ -53,9 +53,9 @@ export default function CopilotPage() {
     },
     {
       icon: CheckCircle,
-      title: 'Enterprise Security & Governance',
+      title: 'Privacy en beveiliging',
       description:
-        'Implementeer Copilot veilig in je organisatie met data protection en compliance in Microsoft 365.',
+        'Leer hoe Copilot omgaat met je data en welke privacy-instellingen je kunt aanpassen binnen Microsoft 365.',
     },
   ];
 
@@ -66,7 +66,7 @@ export default function CopilotPage() {
     'PowerPoint presentation design',
     'Outlook en email workflow',
     'Teams collaboration features',
-    'Enterprise deployment strategieën',
+    'Privacy- en beveiligingsinstellingen',
     'Certificaat van deelname',
     'Levenslange toegang tot materialen',
   ];
@@ -80,7 +80,7 @@ export default function CopilotPage() {
     {
       question: 'Wat zijn de systeemvereisten voor Microsoft Copilot?',
       answer:
-        'Je hebt Microsoft 365 subscription en een Copilot Pro-licentie nodig (of enterprise Copilot). We bespreken alle opties, kosten en implementatie.',
+        'Je hebt een Microsoft 365-abonnement en een Copilot-licentie nodig. Copilot Pro kost $20/maand voor individueel gebruik, zakelijke licenties starten vanaf $18/gebruiker/maand. We bespreken alle opties in de training.',
     },
     {
       question: 'Kan ik Copilot gebruiken voor data-analyse in Excel?',
@@ -90,7 +90,7 @@ export default function CopilotPage() {
     {
       question: 'Hoe zorg ik voor data security bij Copilot in mijn organisatie?',
       answer:
-        'Microsoft heeft sterke beveiligingsmaatregelen. We behandelen data privacy, compliance, permissions en best practices voor enterprise-implementatie.',
+        'Microsoft heeft sterke beveiligingsmaatregelen. We behandelen data privacy, compliance en permissions zodat je weet hoe Copilot met je gegevens omgaat.',
     },
     {
       question: 'Kan ik Copilot gebruiken voor vergaderingen in Teams?',
@@ -100,7 +100,7 @@ export default function CopilotPage() {
     {
       question: 'Wat is de kostprijs van Microsoft Copilot?',
       answer:
-        'Copilot Pro kost ongeveer €20/maand individueel. Enterprise-opties hebben andere prijzen. We bespreken ROI en welke optie best voor jou past.',
+        'Copilot Pro kost $20/maand voor individueel gebruik. Zakelijke licenties starten vanaf $18/gebruiker/maand. We bespreken de ROI en welke optie het beste bij jouw situatie past.',
     },
   ];
 
@@ -115,7 +115,7 @@ export default function CopilotPage() {
       <PageHero
         title="Microsoft Copilot Training 2026"
         subtitle="Beheers AI in Microsoft 365 voor maximale werktempo"
-        highlightedSubtitle="Word • Excel • PowerPoint • Outlook • Teams • Enterprise"
+        highlightedSubtitle="Word • Excel • PowerPoint • Outlook • Teams"
         badge="Actueel 2026"
         showBreadcrumbs
         breadcrumbs={breadcrumbs}

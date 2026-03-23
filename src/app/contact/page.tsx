@@ -61,20 +61,14 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                {/* Email Card */}
+                {/* Reactietijd Card */}
                 <div className="bg-surface border border-border rounded-lg p-6 mb-6 hover:shadow-md transition-shadow">
                   <div className="flex items-start gap-4">
                     <div className="bg-primary-light p-3 rounded-lg">
                       <Mail className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-stone-900 mb-1">E-mail</h3>
-                      <a
-                        href="mailto:info@erikvanderveen.nl"
-                        className="text-primary hover:text-primary-dark transition-colors font-medium"
-                      >
-                        info@erikvanderveen.nl
-                      </a>
+                      <h3 className="font-semibold text-stone-900 mb-1">Reactietijd</h3>
                       <p className="text-text-muted text-sm mt-2">
                         Wij reageren binnen 24 uur op uw bericht
                       </p>
