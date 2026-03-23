@@ -29,6 +29,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="nl" className={`${inter.variable} h-full antialiased`}>
       <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SG2ESBXY35" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-SG2ESBXY35');`,
+          }}
+        />
         <meta name="geo.country" content="NL" />
         <meta name="geo.placename" content="Netherlands" />
         <meta name="geo.position" content="52.3676;4.9041" />

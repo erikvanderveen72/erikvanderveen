@@ -142,8 +142,8 @@ export default function HomePage() {
           </p>
           <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-10 gap-6 items-center">
             {klanten.map((klant) => (
-              <div key={klant.naam} className="relative flex items-center justify-center p-3 bg-stone-50 rounded-xl">
-                <Image src={klant.src} alt={klant.naam} width={120} height={40} className="h-8 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity" unoptimized />
+              <div key={klant.naam} className="relative flex items-center justify-center p-1.5 bg-stone-50 rounded-xl aspect-[3/2]">
+                <Image src={klant.src} alt={klant.naam} width={160} height={80} className="max-h-full max-w-full object-contain opacity-60 hover:opacity-100 transition-opacity" unoptimized />
                 {klant.viaWesthaghe && <span className="absolute -bottom-1 right-1 text-[9px] text-stone-400">*</span>}
               </div>
             ))}
