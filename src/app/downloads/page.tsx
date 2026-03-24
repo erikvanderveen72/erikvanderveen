@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
-import { Download, FileText, Image as ImageIcon, ArrowRight, AlertTriangle } from 'lucide-react';
+import { Download, FileText, ArrowRight, AlertTriangle } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Downloads | Gratis AI-materialen',
@@ -16,15 +16,6 @@ export const metadata: Metadata = {
 };
 
 const downloads = [
-  {
-    title: 'ChatGPT Mogelijkheden Cheatsheet',
-    description:
-      'Compleet overzicht van alle ChatGPT features en tools op één A4. Modellen, Canvas, projecten, zoeken, beeldgeneratie, voice mode, data-analyse en meer. Bijgewerkt maart 2026.',
-    filename: 'chatgpt_mogelijkheden_cheatsheet.png',
-    fileUrl: '/downloads/chatgpt_mogelijkheden_cheatsheet.png',
-    category: 'Afbeelding',
-    available: true,
-  },
   {
     title: 'Claude Code Cheatsheet (PDF)',
     description:
@@ -60,12 +51,8 @@ export default function DownloadsPage() {
                 className="bg-white border border-stone-200 rounded-2xl p-8 hover:shadow-lg transition-all hover:border-primary/30"
               >
                 <div className="flex items-start gap-6">
-                  <div className={`${item.category === 'PDF' ? 'bg-red-50' : 'bg-emerald-50'} p-4 rounded-xl shrink-0`}>
-                    {item.category === 'PDF' ? (
-                      <FileText size={28} className="text-red-500" />
-                    ) : (
-                      <ImageIcon size={28} className="text-emerald-500" />
-                    )}
+                  <div className="bg-red-50 p-4 rounded-xl shrink-0">
+                    <FileText size={28} className="text-red-500" />
                   </div>
                   <div className="flex-1">
                     <span className="inline-block text-xs font-semibold text-primary bg-primary-light px-3 py-1 rounded-full mb-3">
@@ -109,7 +96,7 @@ export default function DownloadsPage() {
           <div className="mt-12 bg-amber-50 border border-amber-200 rounded-2xl p-8">
             <div className="flex items-center gap-3 mb-4">
               <AlertTriangle size={20} className="text-amber-600" />
-              <h3 className="text-lg font-bold text-stone-900">Toelichting bij de Claude Code cheatsheet</h3>
+              <h3 className="text-lg font-bold text-stone-900">Toelichting bij de cheatsheet</h3>
             </div>
             <div className="space-y-4 text-stone-700 leading-relaxed">
               <p>
