@@ -43,7 +43,7 @@ export default function ChatGPTPage() {
       icon: Image,
       title: 'Afbeeldingen Genereren',
       description:
-        'Creëer professionele afbeeldingen, logo\'s en visuele content direct vanuit tekstbeschrijvingen met GPT-4o.',
+        'Creëer professionele afbeeldingen, logo\'s en visuele content direct vanuit tekstbeschrijvingen.',
     },
     {
       icon: CheckCircle,
@@ -62,7 +62,7 @@ export default function ChatGPTPage() {
   const pricingItems = [
     'Volledige ChatGPT masterclass',
     'Hands-on prompting workshop',
-    'Afbeeldingen genereren met GPT-4o',
+    'Afbeeldingen genereren',
     'Custom GPT bouwen en deployen',
     'API integratie en automatisering',
     'Data-analyse voorbeelden',
