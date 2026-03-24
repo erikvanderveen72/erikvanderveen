@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Lock, Shield, RefreshCw } from 'lucide-react';
+import NewsletterForm from '@/components/NewsletterForm';
 
 const columns = [
   {
@@ -53,7 +54,7 @@ export default function Footer() {
         </div>
 
         {/* Columns */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {columns.map((col) => (
             <div key={col.title}>
               <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">{col.title}</h3>
@@ -68,6 +69,11 @@ export default function Footer() {
               </ul>
             </div>
           ))}
+          <div>
+            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Nieuwsbrief</h3>
+            <p className="text-stone-400 text-sm mb-3">Elke twee weken een AI-tip in je inbox.</p>
+            <NewsletterForm variant="footer" />
+          </div>
         </div>
 
         {/* Trust badges */}

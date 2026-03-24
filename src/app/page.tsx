@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Award, Users, Clock, Target, Sparkles, Brain, Cpu, Bot, MessageSquare, Zap, ArrowRight, CheckCircle, Star, Shield } from 'lucide-react';
 import FAQSchema from '@/components/FAQSchema';
+import NewsletterForm from '@/components/NewsletterForm';
 
 const trainingen = [
   {
@@ -257,6 +258,22 @@ export default function HomePage() {
                 <p className="text-stone-600 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* NIEUWSBRIEF */}
+      <section className="bg-gradient-to-br from-primary/5 via-white to-accent/5 border-y border-stone-100">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 text-center">
+          <p className="text-primary font-semibold text-sm uppercase tracking-widest mb-3">Nieuwsbrief</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">
+            Elke twee weken een AI-tip in je inbox
+          </h2>
+          <p className="text-stone-500 text-lg mb-8 max-w-xl mx-auto">
+            Praktische tips, slimme prompts en observaties uit 175+ AI-trainingen. Geen spam, altijd opzegbaar.
+          </p>
+          <div className="max-w-xl mx-auto">
+            <NewsletterForm variant="hero" />
           </div>
         </div>
       </section>
