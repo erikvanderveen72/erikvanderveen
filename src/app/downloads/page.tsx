@@ -62,6 +62,15 @@ export default function DownloadsPage() {
                       {item.title}
                     </h2>
                     <p className="text-stone-500 mb-4">{item.description}</p>
+                    {item.available && (
+                      <a
+                        href={item.fileUrl}
+                        download={item.filename}
+                        className="inline-flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors text-sm font-medium sm:hidden"
+                      >
+                        <Download size={16} /> Download
+                      </a>
+                    )}
                   </div>
                   <div className="shrink-0 hidden sm:block">
                     {item.available ? (
