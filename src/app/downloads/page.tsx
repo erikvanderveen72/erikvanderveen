@@ -17,15 +17,6 @@ export const metadata: Metadata = {
 
 const downloads = [
   {
-    title: 'Claude Code Cheatsheet (PDF)',
-    description:
-      'Handige cheatsheet voor Claude Code. Alle belangrijke commando\'s en shortcuts overzichtelijk op één pagina.',
-    filename: 'claude_code_cheatsheet.pdf',
-    fileUrl: '/downloads/claude_code_cheatsheet.pdf',
-    category: 'PDF',
-    available: true,
-  },
-  {
     title: 'ChatGPT Cheatsheet (PDF)',
     description:
       'Overzichtelijke cheatsheet met de belangrijkste ChatGPT-tips, prompts en technieken op één pagina.',
@@ -33,6 +24,17 @@ const downloads = [
     fileUrl: '/downloads/chatgpt_cheatsheet.pdf',
     category: 'PDF',
     available: true,
+    slug: 'chatgpt',
+  },
+  {
+    title: 'Claude Code Cheatsheet (PDF)',
+    description:
+      'Handige cheatsheet voor Claude Code. Alle belangrijke commando\'s en shortcuts overzichtelijk op één pagina.',
+    filename: 'claude_code_cheatsheet.pdf',
+    fileUrl: '/downloads/claude_code_cheatsheet.pdf',
+    category: 'PDF',
+    available: true,
+    slug: 'claude-code',
   },
 ];
 
@@ -55,85 +57,85 @@ export default function DownloadsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid gap-6">
             {downloads.map((item, index) => (
-              <div
-                key={index}
-                className="bg-white border border-stone-200 rounded-2xl p-8 hover:shadow-lg transition-all hover:border-primary/30"
-              >
-                <div className="flex items-start gap-4 sm:gap-6">
-                  <div className="bg-red-50 p-3 sm:p-4 rounded-xl shrink-0">
-                    <FileText size={28} className="text-red-500" />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <span className="inline-block text-xs font-semibold text-primary bg-primary-light px-3 py-1 rounded-full mb-3">
-                      {item.category}
-                    </span>
-                    <h2 className="text-lg sm:text-xl font-bold text-stone-900 mb-2">
-                      {item.title}
-                    </h2>
-                    <p className="text-stone-500 text-sm sm:text-base mb-4">{item.description}</p>
-                    {item.available && (
-                      <a
-                        href={item.fileUrl}
-                        download={item.filename}
-                        className="sm:hidden inline-flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-xl hover:bg-primary-dark transition-colors font-medium text-sm"
-                      >
-                        <Download size={16} /> Download PDF
-                      </a>
-                    )}
-                  </div>
-                  <div className="shrink-0 hidden sm:block">
-                    {item.available ? (
-                      <a
-                        href={item.fileUrl}
-                        download={item.filename}
-                        className="bg-primary text-white p-3 rounded-xl hover:bg-primary-dark transition-colors inline-block"
-                      >
-                        <Download size={20} />
-                      </a>
-                    ) : (
-                      <div className="bg-stone-100 text-stone-400 p-3 rounded-xl cursor-not-allowed">
-                        <Download size={20} />
-                      </div>
-                    )}
+              <div key={index}>
+                <div className="bg-white border border-stone-200 rounded-2xl p-8 hover:shadow-lg transition-all hover:border-primary/30">
+                  <div className="flex items-start gap-4 sm:gap-6">
+                    <div className="bg-red-50 p-3 sm:p-4 rounded-xl shrink-0">
+                      <FileText size={28} className="text-red-500" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <span className="inline-block text-xs font-semibold text-primary bg-primary-light px-3 py-1 rounded-full mb-3">
+                        {item.category}
+                      </span>
+                      <h2 className="text-lg sm:text-xl font-bold text-stone-900 mb-2">
+                        {item.title}
+                      </h2>
+                      <p className="text-stone-500 text-sm sm:text-base mb-4">{item.description}</p>
+                      {item.available && (
+                        <a
+                          href={item.fileUrl}
+                          download={item.filename}
+                          className="sm:hidden inline-flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-xl hover:bg-primary-dark transition-colors font-medium text-sm"
+                        >
+                          <Download size={16} /> Download PDF
+                        </a>
+                      )}
+                    </div>
+                    <div className="shrink-0 hidden sm:block">
+                      {item.available ? (
+                        <a
+                          href={item.fileUrl}
+                          download={item.filename}
+                          className="bg-primary text-white p-3 rounded-xl hover:bg-primary-dark transition-colors inline-block"
+                        >
+                          <Download size={20} />
+                        </a>
+                      ) : (
+                        <div className="bg-stone-100 text-stone-400 p-3 rounded-xl cursor-not-allowed">
+                          <Download size={20} />
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
+
+                {item.slug === 'claude-code' && (
+                  <div className="mt-4 bg-amber-50 border border-amber-200 rounded-2xl p-8">
+                    <div className="flex items-center gap-3 mb-4">
+                      <AlertTriangle size={20} className="text-amber-600" />
+                      <h3 className="text-lg font-bold text-stone-900">Toelichting bij de Claude Code cheatsheet</h3>
+                    </div>
+                    <div className="space-y-4 text-stone-700 leading-relaxed">
+                      <p>
+                        Deze cheatsheet is een handig startpunt, maar gebruik hem met de nodige nuance.
+                        Een belangrijke kanttekening: voordat je ook maar één letter typt in Claude Code,
+                        ben je al snel 200.000 tokens kwijt aan MCP-servers en instructies. Dat token-budget
+                        is beperkt, dus wees je daarvan bewust.
+                      </p>
+                      <p>
+                        Niet alles wat op de sheet staat heeft een MCP-server nodig. Het bestandssysteem
+                        wordt bijvoorbeeld genoemd als &quot;populaire MCP-server&quot;, maar dat zit standaard
+                        ingebouwd. Hetzelfde geldt voor de browser-integratie: Claude heeft een eigen
+                        browser-extensie, daar heb je geen aparte MCP voor nodig. En tools zoals de
+                        Playwright MCP kosten enorm veel context.
+                      </p>
+                      <p>
+                        Over CLAUDE.md: de sheet raadt aan om er een te maken, maar wees kritisch. Het
+                        overgrote deel van wat je erin zet is niet relevant voor elke prompt, terwijl het
+                        wel elke keer wordt meegestuurd. Dat vreet tokens. Overweeg om instructies gewoon
+                        in je prompt te zetten in plaats van in een configuratiebestand.
+                      </p>
+                      <p>
+                        Tot slot: &quot;begin klein&quot; is een goed advies, maar pas op dat je ook klein
+                        eindigt. Het risico is dat je begint met een simpele setup en vervolgens zoveel
+                        configuratiebestanden en MCP-servers toevoegt dat je meer tijd kwijt bent aan het
+                        managen van je AI-tool dan aan het daadwerkelijk schrijven van code.
+                      </p>
+                    </div>
+                  </div>
+                )}
               </div>
             ))}
-          </div>
-
-          {/* Toelichting */}
-          <div className="mt-12 bg-amber-50 border border-amber-200 rounded-2xl p-8">
-            <div className="flex items-center gap-3 mb-4">
-              <AlertTriangle size={20} className="text-amber-600" />
-              <h3 className="text-lg font-bold text-stone-900">Toelichting bij de cheatsheet</h3>
-            </div>
-            <div className="space-y-4 text-stone-700 leading-relaxed">
-              <p>
-                Deze cheatsheet is een handig startpunt, maar gebruik hem met de nodige nuance.
-                Een belangrijke kanttekening: voordat je ook maar één letter typt in Claude Code,
-                ben je al snel 200.000 tokens kwijt aan MCP-servers en instructies. Dat token-budget
-                is beperkt, dus wees je daarvan bewust.
-              </p>
-              <p>
-                Niet alles wat op de sheet staat heeft een MCP-server nodig. Het bestandssysteem
-                wordt bijvoorbeeld genoemd als &quot;populaire MCP-server&quot;, maar dat zit standaard
-                ingebouwd. Hetzelfde geldt voor de browser-integratie: Claude heeft een eigen
-                browser-extensie, daar heb je geen aparte MCP voor nodig. En tools zoals de
-                Playwright MCP kosten enorm veel context.
-              </p>
-              <p>
-                Over CLAUDE.md: de sheet raadt aan om er een te maken, maar wees kritisch. Het
-                overgrote deel van wat je erin zet is niet relevant voor elke prompt, terwijl het
-                wel elke keer wordt meegestuurd. Dat vreet tokens. Overweeg om instructies gewoon
-                in je prompt te zetten in plaats van in een configuratiebestand.
-              </p>
-              <p>
-                Tot slot: &quot;begin klein&quot; is een goed advies, maar pas op dat je ook klein
-                eindigt. Het risico is dat je begint met een simpele setup en vervolgens zoveel
-                configuratiebestanden en MCP-servers toevoegt dat je meer tijd kwijt bent aan het
-                managen van je AI-tool dan aan het daadwerkelijk schrijven van code.
-              </p>
-            </div>
           </div>
 
           {/* CTA */}
