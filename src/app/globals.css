@@ -76,3 +76,24 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Wikiwijzer article typography */
+.wiki-article-content h2 {
+  position: relative;
+}
+.wiki-article-content h2::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #7c3aed, #6366f1);
+  border-radius: 9999px;
+}
+.wiki-article-content p {
+  text-wrap: pretty;
+}
+.wiki-article-content p::first-letter {
+  /* intentionally empty — only first paragraph gets special treatment via Tailwind */
+}
