@@ -14,7 +14,7 @@ import {
 export const metadata: Metadata = {
   title: 'Claude Training 2026 | AI Training Platform van Erik van der Veen',
   description:
-    'Claude AI training: langdocument analyse, codeerondersteunig, constitutional AI, Artifacts en diepgaande reasoning. Training voor developers en professionals.',
+    'Claude AI training: documentanalyse, codeerondersteuning, Artifacts, Deep Research en Projects. Praktische training voor professionals.',
 };
 
 export const revalidate = 3600;
@@ -23,84 +23,84 @@ export default function ClaudePage() {
   const learningItems = [
     {
       icon: BookOpen,
-      title: 'Langdocument Analyse',
+      title: 'Documentanalyse',
       description:
-        'Analyseer grote documenten, boeken en rapporten. Haal inzichten uit honderden pagina\'s tegelijk.',
+        'Analyseer grote documenten, boeken en rapporten. Claude verwerkt tot 200.000 tokens in één keer.',
     },
     {
       icon: Code,
-      title: 'Geavanceerde Coding Assistentie',
+      title: 'Code-ondersteuning',
       description:
-        'Krijg hulp bij debugging, code review, refactoring en implementatie van complexe algoritmes.',
+        'Hulp bij debugging, code review, refactoring en het implementeren van complexe functionaliteit.',
     },
     {
       icon: Brain,
-      title: 'Constitutional AI Beginselen',
+      title: 'Deep Research',
       description:
-        'Begrijp hoe Claude werkt met ethische richtlijnen en verantwoorde AI-principes.',
+        'Laat Claude diepgaand onderzoek doen: meerdere bronnen combineren tot uitgebreide analyses.',
     },
     {
       icon: MessageSquare,
-      title: 'Artifacts en Rich Output',
+      title: 'Artifacts en Projects',
       description:
-        'Creëer interactieve componenten, HTML-interfaces en gestructureerde outputs met Artifacts.',
+        'Maak interactieve componenten, werk samen in Projects en organiseer je werk overzichtelijk.',
     },
     {
       icon: Brain,
-      title: 'Diepgaande Reasoning',
+      title: 'Extended Thinking',
       description:
-        'Werk met Claude\'s extended thinking voor complexe problem-solving en multi-stap analyses.',
+        'Gebruik Claude\'s denkmodus voor complexe vraagstukken en stapsgewijze analyses.',
     },
     {
       icon: CheckCircle,
-      title: 'API Integratie en Productie',
+      title: 'Effectief prompten',
       description:
-        'Integreer Claude in jouw applicaties via API met best practices voor productie-implementatie.',
+        'Leer hoe je Claude het beste aanstuurt: van simpele vragen tot geavanceerde workflows.',
     },
   ];
 
   const pricingItems = [
-    'Volledige Claude AI masterclass',
-    'Langdocument analyse technieken',
-    'Geavanceerde coding workshops',
-    'Constitutional AI en ethische richtlijnen',
-    'Artifacts en custom outputs',
-    'Extended thinking en reasoning',
-    'API integration en best practices',
-    'Certificaat van deelname',
-    'Levenslange toegang tot materialen',
+    'Volledige Claude masterclass (3 uur)',
+    'Documentanalyse en grote bestanden verwerken',
+    'Deep Research en extended thinking',
+    'Artifacts en Projects in de praktijk',
+    'Effectief prompten voor jouw vakgebied',
+    'Code-ondersteuning en automatisering',
+    'Hands-on oefeningen met eigen casuïstiek',
+    'Inclusief reistijd en reiskosten',
+    'Niet tevreden? Geen factuur!',
   ];
 
   const faqItems = [
     {
-      question: 'Wat maakt Claude anders dan andere AI-modellen?',
+      question: 'Wat maakt Claude anders dan ChatGPT?',
       answer:
-        'Claude staat bekend om lange context windows (honderden duizenden tokens), sterke reasoning abilities, en constitutional AI training. We bespreken deze voordelen gedetailleerd in de training.',
+        'Claude kan zeer grote documenten in één keer verwerken, heeft een sterke denkmodus (extended thinking) en staat bekend om zorgvuldige, genuanceerde antwoorden. In de training laten we zien wanneer Claude de betere keuze is.',
     },
     {
-      question: 'Kan ik Claude gebruiken voor langdocument analyse?',
+      question: 'Kan ik hele documenten laten analyseren door Claude?',
       answer:
-        'Ja, Claude kan tot 200K tokens (ongeveer 150.000 woorden) in één keer verwerken. Dit is ideaal voor boeken, rapporten en volledige codebases. Dit is een kernonderdeel van de training.',
+        'Ja, Claude verwerkt tot 200.000 tokens in één keer. Dat is roughly een boek van 500 pagina\'s. Ideaal voor het analyseren van rapporten, contracten, onderzoeken of codebases.',
     },
     {
-      question: 'Hoe goed is Claude voor programmering?',
+      question: 'Wat zijn Artifacts en Projects?',
       answer:
-        'Claude is uitstekend voor coding. Het kan debugging helpen, code review geven, refactoring suggereren en complete features implementeren. Veel developers kiezen Claude voor code generation.',
+        'Artifacts zijn interactieve outputs die Claude maakt: code, tabellen, grafieken of complete webpagina\'s. Met Projects organiseer je gesprekken en bestanden rondom een thema. Beide komen uitgebreid aan bod.',
     },
     {
-      question: 'Wat zijn Artifacts en hoe gebruik ik ze?',
+      question: 'Wat is Deep Research?',
       answer:
-        'Artifacts zijn door Claude gegenereerde code, HTML of componenten die direct weergegeven kunnen worden. Ze zijn perfect voor prototyping en demonstratie. We geven veel praktische voorbeelden.',
+        'Met Deep Research laat je Claude zelfstandig onderzoek doen. Het doorzoekt meerdere bronnen, combineert informatie en levert een uitgebreid rapport op. Zeer geschikt voor marktonderzoek, concurrentieanalyse of literatuuronderzoek.',
     },
     {
-      question: 'Hoe integreer ik Claude API in mijn applicatie?',
+      question: 'Heb ik een betaald abonnement nodig?',
       answer:
-        'Via Anthropic\'s API kun je Claude in bijna elk project integreren. We behandelen authentication, rate limiting, error handling en production best practices.',
+        'De gratis versie van Claude is al krachtig voor veel taken. Voor langere documenten, Deep Research en extended thinking is een Pro-abonnement aan te raden. We bespreken de opties in de training.',
     },
     {
-      question: 'Wat is "constitutional AI" en waarom is het belangrijk?',
+      question: 'Is deze training ook geschikt voor niet-technische medewerkers?',
       answer:
-        'Constitutional AI betekent dat Claude getraind is met ethische richtlijnen. Dit resulteert in responsabele, eerlijke outputs. We bespreken wat dit betekent en hoe het je benefits.',
+        'Absoluut. De training wordt afgestemd op het niveau van de groep. Of je nu in marketing, HR, finance of IT werkt: je leert Claude inzetten voor jouw dagelijkse werkzaamheden.',
     },
   ];
 
@@ -112,10 +112,9 @@ export default function ClaudePage() {
   return (
     <>
       <PageHero
-        title="Claude Training 2026"
-        subtitle="Beheers Anthropic's meest capabele AI-model"
-        highlightedSubtitle="Langdocumenten • Coding • Constitutional AI • Artifacts • Reasoning"
-        badge="Actueel 2026"
+        title="Claude Training"
+        subtitle="Leer werken met Anthropic's krachtigste AI-model"
+        highlightedSubtitle="Documentanalyse • Deep Research • Artifacts • Projects • Extended Thinking"
         showBreadcrumbs
         breadcrumbs={breadcrumbs}
       />
@@ -127,8 +126,8 @@ export default function ClaudePage() {
             Wat leer je in deze training?
           </h2>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
-            Ontdek de volle mogelijkheden van Claude voor coding, document-analyse
-            en geavanceerde AI-toepassingen.
+            Ontdek wat Claude kan betekenen voor jouw werk: van documentanalyse
+            tot Deep Research en slimme automatisering.
           </p>
         </div>
 
@@ -156,11 +155,11 @@ export default function ClaudePage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-4">
-              Claude Training Package
+              Claude Training
             </h2>
             <p className="text-lg text-text-muted mb-8">
-              Een complete masterclass in Claude AI. Van basis prompting tot
-              geavanceerde API-integraties en complex problem solving.
+              Een praktische training in Claude. Van effectief prompten tot
+              documentanalyse, Deep Research en slimme workflows.
             </p>
             <div className="text-4xl font-bold text-primary mb-2">€975,-</div>
             <p className="text-text-muted mb-8">excl. BTW</p>
@@ -190,7 +189,7 @@ export default function ClaudePage() {
             Veelgestelde vragen
           </h2>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
-            Vragen over Claude, capabilities en hoe je ermee aan de slag gaat.
+            Vragen over Claude en hoe je ermee aan de slag gaat.
           </p>
         </div>
 
@@ -223,8 +222,8 @@ export default function ClaudePage() {
             Klaar om Claude volledig te beheersen?
           </h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-95">
-            Sluit je aan bij developers en professionals die Claude gebruiken voor
-            geavanceerde AI-toepassingen. Start je training vandaag.
+            Boek een in-company Claude training en leer je team in drie uur
+            effectief werken met dit krachtige AI-model.
           </p>
           <Link
             href="/contact"

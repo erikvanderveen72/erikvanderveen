@@ -14,9 +14,6 @@ const navItems = [
       { label: 'Copilot Training', href: '/copilot', description: 'AI in Microsoft 365' },
     ],
   },
-  { label: 'Artikelen', href: '/artikelen' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'Downloads', href: '/downloads' },
   { label: 'Over Erik', href: '/over-erik' },
   { label: 'Contact', href: '/contact' },
 ];

@@ -23,9 +23,9 @@ export default function ChatGPTPage() {
   const learningItems = [
     {
       icon: MessageSquare,
-      title: 'Prompting Mastery',
+      title: 'Effectief prompten',
       description:
-        'Ontdek geavanceerde promptingtechnieken en best practices voor optimale resultaten met ChatGPT.',
+        'Leer hoe je ChatGPT aanstuurt met de juiste prompts. Van simpele vragen tot complexe opdrachten.',
     },
     {
       icon: Zap,
@@ -47,9 +47,9 @@ export default function ChatGPTPage() {
     },
     {
       icon: CheckCircle,
-      title: 'Custom GPT Development',
+      title: 'Custom GPTs maken',
       description:
-        'Ontwerp en train aangepaste GPT-modellen voor jouw specifieke bedrijfsbehoeften.',
+        'Bouw je eigen GPT: een op maat gemaakte AI-assistent voor jouw specifieke werkzaamheden.',
     },
     {
       icon: Zap,
@@ -63,18 +63,18 @@ export default function ChatGPTPage() {
     'Volledige ChatGPT masterclass',
     'Hands-on prompting workshop',
     'Afbeeldingen genereren',
-    'Custom GPT bouwen en deployen',
-    'API integratie en automatisering',
-    'Data-analyse voorbeelden',
-    'Certificaat van deelname',
-    'Levenslange toegang tot materialen',
+    'Custom GPTs bouwen',
+    'Data-analyse en visualisaties',
+    'Hands-on oefeningen met eigen casuïstiek',
+    'Inclusief reistijd en reiskosten',
+    'Niet tevreden? Geen factuur!',
   ];
 
   const faqItems = [
     {
       question: 'Wat is de beste manier om effectieve prompts te schrijven?',
       answer:
-        'Effectieve prompts zijn specifiek, contextueel en goed gestructureerd. Gebruik duidelijke instructies, voorbeelden, en definieer rollen. In deze training leer je proven technieken en patterns die garanties opleveren.',
+        'Effectieve prompts zijn specifiek, contextueel en goed gestructureerd. Gebruik duidelijke instructies, voorbeelden, en definieer rollen. In deze training leer je bewezen technieken die direct betere resultaten opleveren.',
     },
     {
       question: 'Kan ik ChatGPT gebruiken voor data-analyse?',
@@ -94,12 +94,12 @@ export default function ChatGPTPage() {
     {
       question: 'Hoe integreer ik ChatGPT in mijn website of app?',
       answer:
-        'Via OpenAI\'s API kun je ChatGPT integreren in bijna elke applicatie. We behandelen API-keys, authentificatie, error handling en best practices voor production-implementaties.',
+        'Via OpenAI\'s API kun je ChatGPT integreren in bijna elke applicatie. We behandelen API-keys, authenticatie, foutafhandeling en best practices voor productie-implementaties.',
     },
     {
       question: 'Wat zijn de limieten van ChatGPT?',
       answer:
-        'ChatGPT heeft context-limieten (4K of 128K tokens), kan soms fout informatie geven, en heeft een kennisafsnij moment. We bespreken deze limieten en hoe je ermee omgaat in praktijk.',
+        'ChatGPT kan soms onjuiste informatie geven en heeft een kennislimiet. We bespreken deze beperkingen en hoe je er in de praktijk slim mee omgaat.',
     },
   ];
 
@@ -111,10 +111,9 @@ export default function ChatGPTPage() {
   return (
     <>
       <PageHero
-        title="ChatGPT Training 2026"
+        title="ChatGPT Training"
         subtitle="Beheers de krachtigste AI-tool ter wereld"
         highlightedSubtitle="Prompting • Tekstgeneratie • Data-Analyse • Custom GPTs • Beeldgeneratie"
-        badge="Actueel 2026"
         showBreadcrumbs
         breadcrumbs={breadcrumbs}
       />
@@ -155,7 +154,7 @@ export default function ChatGPTPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-4">
-              ChatGPT Training Package
+              ChatGPT Training
             </h2>
             <p className="text-lg text-text-muted mb-8">
               Een compleet trainingsprogramma om ChatGPT op een professioneel

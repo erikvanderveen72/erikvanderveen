@@ -12,9 +12,9 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Google Gemini Training 2026 | AI Training Platform van Erik van der Veen',
+  title: 'Google Gemini Training | AI Training Platform van Erik van der Veen',
   description:
-    'Ontdek Google Gemini: Google Workspace integratie, multimodaal leren, Gemini Advanced, en het volledige Google ecosysteem. Training voor professionals.',
+    'Google Gemini training: Workspace integratie, multimodaal werken, Gemini Advanced en data-analyse. Praktische training voor professionals.',
 };
 
 export const revalidate = 3600;
@@ -23,83 +23,83 @@ export default function GeminiPage() {
   const learningItems = [
     {
       icon: Layers,
-      title: 'Google Workspace Integratie',
+      title: 'Gemini in Google Workspace',
       description:
-        'Integreer Gemini naadloos in Gmail, Docs, Sheets, Slides en Calendar voor dagelijkse productiviteit.',
+        'Gebruik Gemini in Gmail, Docs, Sheets, Slides en Calendar om je dagelijkse werk sneller te doen.',
     },
     {
       icon: MessageSquare,
-      title: 'Multimodaal Leren',
+      title: 'Multimodaal werken',
       description:
-        'Werk met afbeeldingen, video\'s, audio en tekst tegelijk. Verwerk meerdere formaten in één conversatie.',
+        'Werk met afbeeldingen, video\'s, audio en tekst tegelijk. Verwerk meerdere formaten in één gesprek.',
     },
     {
       icon: Zap,
-      title: 'Gemini Advanced Functies',
+      title: 'Gemini Advanced',
       description:
-        'Ontdek de krachtige mogelijkheden van Gemini Advanced voor complexe taken en diepere analyses.',
+        'Ontdek de geavanceerde mogelijkheden van Gemini Advanced voor complexe taken en diepgaande analyses.',
     },
     {
       icon: BarChart3,
-      title: 'Data Verwerking en Analyse',
+      title: 'Data-analyse in Sheets',
       description:
-        'Analyseer grote datasets in Google Sheets, creëer rapporten en haal inzichten uit je gegevens.',
+        'Analyseer datasets in Google Sheets, maak rapporten en haal bruikbare inzichten uit je gegevens.',
     },
     {
       icon: CheckCircle,
-      title: 'Google Ecosysteem Optimalisatie',
+      title: 'Effectief prompten',
       description:
-        'Maximize je productiviteit door Gemini optimaal in te zetten met alle Google-tools.',
+        'Leer hoe je Gemini het beste aanstuurt met de juiste prompts voor jouw dagelijkse werkzaamheden.',
     },
     {
       icon: Zap,
-      title: 'Collaboration en Team Workflows',
+      title: 'Samenwerken met Gemini',
       description:
-        'Verbeter teamwerk en samenwerking door Gemini in je collaborative processen in te bouwen.',
+        'Verbeter teamwerk en samenwerking door Gemini in te zetten in je gezamenlijke werkprocessen.',
     },
   ];
 
   const pricingItems = [
     'Volledige Google Gemini masterclass',
-    'Workspace integratie training (Gmail, Docs, Sheets)',
-    'Gemini Advanced setup en optimalisatie',
-    'Multimodale content verwerking',
-    'Data-analyse in Google Sheets',
-    'Team collaboration strategieën',
-    'Certificaat van deelname',
-    'Levenslange toegang tot materialen',
+    'Gemini in Gmail, Docs, Sheets en Slides',
+    'Gemini Advanced inrichten en gebruiken',
+    'Multimodaal werken met tekst, beeld en video',
+    'Data-analyse en rapportages in Sheets',
+    'Hands-on oefeningen met eigen casuïstiek',
+    'Inclusief reistijd en reiskosten',
+    'Niet tevreden? Geen factuur!',
   ];
 
   const faqItems = [
     {
-      question: 'Wat is het verschil tussen Gemini Free en Gemini Advanced?',
+      question: 'Wat is het verschil tussen Gemini en Gemini Advanced?',
       answer:
-        'Gemini Free biedt basisfuncties, terwijl Gemini Advanced meer queries, langere context windows en betere reasoning biedt. In deze training behandelen we beide en helpen we je het juiste plan kiezen.',
+        'De gratis versie van Gemini biedt basisfuncties. Gemini Advanced biedt meer mogelijkheden, langere gesprekken en betere analyses. In de training behandelen we beide en helpen we je de juiste keuze maken.',
     },
     {
       question: 'Kan ik Gemini gebruiken in Google Workspace?',
       answer:
-        'Ja, Gemini is volledig geïntegreerd in Google Workspace. Je kunt het gebruiken in Gmail, Docs, Sheets, Slides en meer. We geven praktische voorbeelden voor elke applicatie.',
+        'Ja, Gemini is volledig geïntegreerd in Google Workspace. Je kunt het gebruiken in Gmail, Docs, Sheets, Slides en meer. We laten praktische voorbeelden zien voor elke applicatie.',
     },
     {
-      question: 'Hoe werkt multimodaal leren met Gemini?',
+      question: 'Hoe werkt multimodaal werken met Gemini?',
       answer:
-        'Gemini kan tegelijk met tekst, afbeeldingen, video en audio werken. Dit opent mogelijkheden voor complex content analysis. We demonstreren dit met echte use cases.',
+        'Gemini kan tegelijk met tekst, afbeeldingen, video en audio werken. Dit biedt veel mogelijkheden voor het analyseren en verwerken van verschillende soorten content. We laten dit zien met praktijkvoorbeelden.',
     },
     {
-      question: 'Wat zijn de voordelen van Google Gemini versus ChatGPT?',
+      question: 'Wat zijn de voordelen van Google Gemini ten opzichte van ChatGPT?',
       answer:
-        'Gemini integreert perfect in Google Workspace, heeft sterke multimodal capabilities, en biedt real-time data toegang. Het is ideaal voor Google-gebruikers. We vergelijken beide in de training.',
+        'Gemini werkt naadloos samen met Google Workspace, kan goed overweg met verschillende mediatypen en biedt directe toegang tot actuele informatie. Ideaal als je al met Google-tools werkt. We vergelijken beide in de training.',
     },
     {
       question: 'Kan ik Gemini gebruiken voor data-analyse?',
       answer:
-        'Ja, Gemini in Google Sheets kan data analyseren, grafieken creëren en inzichten genereren. Perfect voor bedrijfsrapportage en besluitvorming. Dit is een kern onderdeel van onze training.',
+        'Ja, Gemini in Google Sheets kan data analyseren, grafieken maken en inzichten genereren. Zeer geschikt voor bedrijfsrapportage en besluitvorming. Dit komt uitgebreid aan bod in de training.',
     },
     {
-      question: 'Hoe bescherm ik mijn privacy bij gebruik van Gemini?',
+      question: 'Hoe zit het met privacy bij gebruik van Gemini?',
       answer:
-        'Google respecteert jouw data privacy. We bespreken beveiligingsinstellingen, data handling policies en best practices voor enterprise-gebruik.',
+        'Google heeft uitgebreide beveiligingsmaatregelen. We bespreken privacy-instellingen, hoe Google omgaat met je gegevens en best practices voor zakelijk gebruik.',
     },
   ];
 
@@ -111,10 +111,9 @@ export default function GeminiPage() {
   return (
     <>
       <PageHero
-        title="Google Gemini Training 2026"
+        title="Google Gemini Training"
         subtitle="Beheers Google's AI-assistent voor maximale productiviteit"
         highlightedSubtitle="Google Workspace • Multimodaal • Gemini Advanced • Data-Analyse"
-        badge="Actueel 2026"
         showBreadcrumbs
         breadcrumbs={breadcrumbs}
       />
@@ -126,7 +125,7 @@ export default function GeminiPage() {
             Wat leer je in deze training?
           </h2>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
-            Leer hoe je Google Gemini maximaal kunt benutten voor jouw dagelijkse
+            Leer hoe je Google Gemini optimaal kunt inzetten voor jouw dagelijkse
             werk en professionele groei.
           </p>
         </div>
@@ -155,11 +154,11 @@ export default function GeminiPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-4">
-              Google Gemini Training Package
+              Google Gemini Training
             </h2>
             <p className="text-lg text-text-muted mb-8">
-              Een complete training om Google Gemini en Workspace integratie
-              volledig te beheersen. Van basis tot geavanceerde strategieën.
+              Een praktische training om Google Gemini en Workspace-integratie
+              volledig te beheersen. Van basis tot geavanceerde technieken.
             </p>
             <div className="text-4xl font-bold text-primary mb-2">€975,-</div>
             <p className="text-text-muted mb-8">excl. BTW</p>
@@ -189,7 +188,7 @@ export default function GeminiPage() {
             Veelgestelde vragen
           </h2>
           <p className="text-lg text-text-muted max-w-2xl mx-auto">
-            Antwoorden op populaire vragen over Google Gemini en training.
+            Vragen over Google Gemini en hoe het jouw werk kan verbeteren.
           </p>
         </div>
 
@@ -222,8 +221,8 @@ export default function GeminiPage() {
             Klaar om Google Gemini te beheersen?
           </h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-95">
-            Ontdek hoe duizenden professionals Google Gemini gebruiken om hun
-            productiviteit te verhogen. Begin je training nu.
+            Boek een in-company Gemini training en leer je team Google's
+            AI-assistent effectief inzetten voor hun dagelijkse werk.
           </p>
           <Link
             href="/contact"

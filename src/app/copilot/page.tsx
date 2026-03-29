@@ -23,9 +23,9 @@ export default function CopilotPage() {
   const learningItems = [
     {
       icon: FileText,
-      title: 'Word Copilot Mastery',
+      title: 'Copilot in Word',
       description:
-        'Schrijf, bewerk en optimaliseer documenten met Copilot. Automatiseer content creatie en verbetering in Word.',
+        'Schrijf, bewerk en optimaliseer documenten met Copilot. Van e-mails tot rapporten, sneller en beter.',
     },
     {
       icon: BarChart3,
@@ -47,9 +47,9 @@ export default function CopilotPage() {
     },
     {
       icon: Zap,
-      title: 'Teams Collaboration Features',
+      title: 'Copilot in Teams',
       description:
-        'Verbeter teamwork, notuleer vergaderingen automatisch en verbeter samenwerking met Copilot in Teams.',
+        'Laat vergaderingen automatisch notuleren, samenvatten en actiepunten oppakken met Copilot in Teams.',
     },
     {
       icon: CheckCircle,
@@ -63,12 +63,13 @@ export default function CopilotPage() {
     'Volledige Microsoft Copilot masterclass',
     'Word documentbewerking en optimalisatie',
     'Excel data-analyse en automatisatie',
-    'PowerPoint presentation design',
-    'Outlook en email workflow',
-    'Teams collaboration features',
+    'PowerPoint presentaties maken en verbeteren',
+    'Outlook en e-mail slimmer afhandelen',
+    'Teams vergaderingen samenvatten en notuleren',
     'Privacy- en beveiligingsinstellingen',
-    'Certificaat van deelname',
-    'Levenslange toegang tot materialen',
+    'Hands-on oefeningen met eigen casuïstiek',
+    'Inclusief reistijd en reiskosten',
+    'Niet tevreden? Geen factuur!',
   ];
 
   const faqItems = [
@@ -90,7 +91,7 @@ export default function CopilotPage() {
     {
       question: 'Hoe zorg ik voor data security bij Copilot in mijn organisatie?',
       answer:
-        'Microsoft heeft sterke beveiligingsmaatregelen. We behandelen data privacy, compliance en permissions zodat je weet hoe Copilot met je gegevens omgaat.',
+        'Microsoft heeft sterke beveiligingsmaatregelen. We behandelen privacy, compliance en rechten zodat je weet hoe Copilot met je gegevens omgaat.',
     },
     {
       question: 'Kan ik Copilot gebruiken voor vergaderingen in Teams?',
@@ -112,10 +113,9 @@ export default function CopilotPage() {
   return (
     <>
       <PageHero
-        title="Microsoft Copilot Training 2026"
-        subtitle="Beheers AI in Microsoft 365 voor maximale werktempo"
+        title="Microsoft Copilot Training"
+        subtitle="AI inzetten in je dagelijkse Microsoft 365-werkzaamheden"
         highlightedSubtitle="Word • Excel • PowerPoint • Outlook • Teams"
-        badge="Actueel 2026"
         showBreadcrumbs
         breadcrumbs={breadcrumbs}
       />
@@ -156,12 +156,11 @@ export default function CopilotPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-4">
-              Microsoft Copilot Training Package
+              Microsoft Copilot Training
             </h2>
             <p className="text-lg text-text-muted mb-8">
-              Een comprehensive training om Copilot in alle Microsoft 365
-              applicaties optimaal in te zetten. Perfect voor bedrijven en
-              individuals.
+              Een praktische training om Copilot in alle Microsoft 365-applicaties
+              optimaal in te zetten. Op maat gemaakt voor jouw team.
             </p>
             <div className="text-4xl font-bold text-primary mb-2">€975,-</div>
             <p className="text-text-muted mb-8">excl. BTW</p>
