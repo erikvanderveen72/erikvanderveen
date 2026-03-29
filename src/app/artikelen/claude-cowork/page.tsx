@@ -116,7 +116,7 @@ export default function ClaudeCoworkArtikel() {
 
           {/* Intro */}
           <p className="text-lg text-stone-700 leading-relaxed mb-6">
-            Ik heb in 180 plus AI-trainingen en 25 jaar digitale marketing behoorlijk veel tools voorbij zien komen. In de afgelopen drie jaar heb ik tientallen AI-tools voorbij zien komen. Maar wat ik de afgelopen weken heb meegemaakt met Claude Cowork, slaat werkelijk alles wat ik tot nu toe heb gezien.
+            Ik kan je zeggen dat ik in de afgelopen drie jaar behoorlijk wat AI-tools langs heb zien komen. Maar wat ik de afgelopen weken heb meegemaakt met Claude Cowork, slaat werkelijk alles wat ik tot nu toe heb gezien.
           </p>
 
           <h2 className="text-2xl font-extrabold text-stone-900 mb-6">
