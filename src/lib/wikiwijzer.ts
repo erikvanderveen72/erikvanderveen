@@ -68,7 +68,6 @@ export const articles: WikiArticle[] = [
         { label: 'Coördinaten', value: '53°13\'N, 6°34\'O' },
         { label: 'Postcode', value: '9700–9747' },
         { label: 'Netnummer', value: '050' },
-        { label: 'Provincie', value: 'Groningen' },
         { label: 'Universiteit', value: 'Rijksuniversiteit Groningen (1614)' },
         { label: 'Bijnaam', value: 'Stad (Gronings)' },
       ],

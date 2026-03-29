@@ -134,7 +134,7 @@ export default async function WikiArticlePage({ params }: { params: Promise<{ sl
           <article className="flex-1 order-1 lg:order-2 min-w-0">
             {/* Summary card */}
             <div className="bg-gradient-to-br from-violet-50 to-indigo-50 border border-violet-100 rounded-2xl p-6 md:p-8 mb-10">
-              <p className="text-stone-700 text-lg leading-relaxed">{article.summary}</p>
+              <p className="text-stone-800 text-lg leading-[1.8]">{article.summary}</p>
             </div>
 
             {/* Sections */}
@@ -145,19 +145,19 @@ export default async function WikiArticlePage({ params }: { params: Promise<{ sl
                     {section.title}
                   </h2>
                   {section.content.split('\n\n').map((paragraph, pi) => (
-                    <p key={pi} className="text-stone-600 leading-relaxed mb-4 text-[16.5px]">
+                    <p key={pi} className="text-stone-700 leading-[1.9] mb-5 text-[17px]">
                       {paragraph}
                     </p>
                   ))}
 
                   {section.subsections?.map((sub) => (
-                    <div key={sub.id} id={sub.id} className="mt-8 mb-6 scroll-mt-24">
-                      <h3 className="text-xl font-bold text-stone-800 mb-3 flex items-center gap-2">
+                    <div key={sub.id} id={sub.id} className="mt-10 mb-8 scroll-mt-24">
+                      <h3 className="text-xl font-bold text-stone-800 mb-4 flex items-center gap-2">
                         <div className="w-1 h-6 bg-gradient-to-b from-violet-500 to-indigo-500 rounded-full" />
                         {sub.title}
                       </h3>
                       {sub.content.split('\n\n').map((paragraph, pi) => (
-                        <p key={pi} className="text-stone-600 leading-relaxed mb-4 text-[16.5px]">
+                        <p key={pi} className="text-stone-700 leading-[1.9] mb-5 text-[17px]">
                           {paragraph}
                         </p>
                       ))}
