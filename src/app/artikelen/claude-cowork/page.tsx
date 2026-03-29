@@ -116,12 +116,20 @@ export default function ClaudeCoworkArtikel() {
 
           {/* Intro */}
           <p className="text-lg text-stone-700 leading-relaxed mb-6">
-            Ik ben iemand die snel onder de indruk is van AI-tools. Dat geef ik eerlijk toe. Maar wat ik de afgelopen weken heb meegemaakt met Claude Cowork, slaat werkelijk alles wat ik tot nu toe heb gezien. En ik heb in 180+ AI-trainingen en 25 jaar digitale marketing behoorlijk wat tools voorbij zien komen.
+            Ik heb in 180 plus AI-trainingen en 25 jaar digitale marketing behoorlijk veel tools voorbij zien komen. In de afgelopen drie jaar heb ik tientallen AI-tools voorbij zien komen. Maar wat ik de afgelopen weken heb meegemaakt met Claude Cowork, slaat werkelijk alles wat ik tot nu toe heb gezien.
           </p>
+
+          <h2 className="text-2xl font-extrabold text-stone-900 mb-6">
+            Wat is Claude Cowork?
+          </h2>
 
           <p className="text-stone-600 leading-relaxed mb-6">
             Claude Cowork is de nieuwste tool van Anthropic, het bedrijf achter Claude. Waar je bij een normaal AI-chatgesprek antwoorden krijgt op vragen, gaat Cowork een enorme stap verder: het voert taken daadwerkelijk uit. Het leest je bestanden, maakt documenten, analyseert data, bouwt presentaties en nog veel meer. En dat allemaal in gewone mensentaal. Geen code, geen technische kennis nodig.
           </p>
+
+          <h2 className="text-2xl font-extrabold text-stone-900 mb-6">
+            Van 20 naar 100 euro per maand
+          </h2>
 
           <p className="text-stone-600 leading-relaxed mb-10">
             Ik was er zo intensief mee bezig dat ik vrij snel van het standaard abonnement van 20 euro per maand ben overgestapt naar het Max-abonnement van 100 euro per maand. En zelfs daar zat ik regelmatig tegen de limiet aan. Dat zegt wel iets over hoe verslavend productief deze tool is.
@@ -138,9 +146,9 @@ export default function ClaudeCoworkArtikel() {
 
           {/* Voorbeeld 1 */}
           <div className="bg-white border border-stone-200 rounded-2xl p-6 mb-4">
-            <h3 className="text-lg font-bold text-stone-900 mb-3">URL-analyse in seconden</h3>
+            <h3 className="text-lg font-bold text-stone-900 mb-3">Website-analyse in enkele minuten</h3>
             <p className="text-stone-600 leading-relaxed">
-              Ik gaf Cowork een URL van een website en vroeg: &ldquo;Analyseer deze site en geef me verbeterpunten voor SEO, conversie en gebruiksvriendelijkheid.&rdquo; Binnen een minuut had ik een compleet rapport met concrete aanbevelingen. Geen vaag advies, maar specifieke punten die ik direct kon doorvoeren.
+              Ik gaf Cowork een URL van een website en vroeg: &ldquo;Analyseer deze site en geef me verbeterpunten voor SEO, conversie en gebruiksvriendelijkheid.&rdquo; Binnen enkele minuten had ik een compleet rapport met concrete aanbevelingen. Geen vaag advies, maar specifieke punten die ik direct kon doorvoeren.
             </p>
           </div>
 
@@ -156,11 +164,19 @@ export default function ClaudeCoworkArtikel() {
           <div className="bg-white border border-stone-200 rounded-2xl p-6 mb-4">
             <h3 className="text-lg font-bold text-stone-900 mb-3">CSS in huisstijl omzetten</h3>
             <p className="text-stone-600 leading-relaxed">
-              Ik liet Cowork de huisstijl van een bedrijf analyseren en vervolgens alle CSS-code aanpassen zodat de website er consistent uitzag. Kleuren, fonts, spacing: alles werd automatisch aangepast naar de huisstijlrichtlijnen.
+              Ik vroeg Cowork om een website te bezoeken en op basis van de stylesheet de huisstijl te analyseren. Vervolgens liet ik alle CSS-code aanpassen zodat de website er consistent uitzag. Kleuren, fonts, spacing: alles werd automatisch aangepast naar de huisstijlrichtlijnen.
             </p>
           </div>
 
           {/* Voorbeeld 4 */}
+          <div className="bg-white border border-stone-200 rounded-2xl p-6 mb-4">
+            <h3 className="text-lg font-bold text-stone-900 mb-3">PowerPoint, Word en PDF maken</h3>
+            <p className="text-stone-600 leading-relaxed">
+              Cowork kan complete PowerPoint-presentaties, Word-documenten en PDF&apos;s voor je maken. Geef een onderwerp op, beschrijf de structuur die je wilt, en Cowork levert een volledig opgemaakt bestand op dat je direct kunt gebruiken of verder kunt bewerken.
+            </p>
+          </div>
+
+          {/* Voorbeeld 5 */}
           <div className="bg-white border border-stone-200 rounded-2xl p-6 mb-4">
             <h3 className="text-lg font-bold text-stone-900 mb-3">Bestanden organiseren via je computer</h3>
             <p className="text-stone-600 leading-relaxed mb-4">
@@ -168,16 +184,24 @@ export default function ClaudeCoworkArtikel() {
             </p>
             <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
               <p className="text-amber-800 text-sm leading-relaxed">
-                <strong>Let op:</strong> als je Cowork toegang geeft tot mappen op je computer, besef dan wel dat mensen die bij jouw Claude-account kunnen komen, in principe ook bij die bestanden kunnen. Verdiep je dus goed in de mogelijkheden en beperkingen, en wees zorgvuldig met welke mappen je toegankelijk maakt.
+                <strong>Let op:</strong> als je Cowork toegang geeft tot mappen op je computer, besef dan wel dat mensen die bij jouw Claude-account kunnen komen, in principe ook bij die bestanden kunnen. Verdiep je dus goed in de mogelijkheden en beperkingen en wees zorgvuldig met welke mappen je toegankelijk maakt.
               </p>
             </div>
           </div>
 
           {/* Voorbeeld 5 */}
-          <div className="bg-white border border-stone-200 rounded-2xl p-6 mb-10">
+          <div className="bg-white border border-stone-200 rounded-2xl p-6 mb-4">
             <h3 className="text-lg font-bold text-stone-900 mb-3">Geautomatiseerde taken</h3>
             <p className="text-stone-600 leading-relaxed">
-              Met Cowork kun je terugkerende taken automatiseren. Denk aan: elke ochtend je e-mail laten samenvatten, wekelijks een rapport laten genereren, of dagelijks data laten ophalen en verwerken. Je stelt het een keer in en het draait vanzelf.
+              Met Cowork kun je terugkerende taken automatiseren. Denk aan: elke ochtend je e-mail laten samenvatten, wekelijks een rapport laten genereren of dagelijks data laten ophalen en verwerken. Je stelt het een keer in en het draait vanzelf.
+            </p>
+          </div>
+
+          {/* Voorbeeld 7 */}
+          <div className="bg-white border border-stone-200 rounded-2xl p-6 mb-10">
+            <h3 className="text-lg font-bold text-stone-900 mb-3">Prijzen en tarieven scrapen</h3>
+            <p className="text-stone-600 leading-relaxed">
+              Ik vroeg Cowork om de prijzen en tarieven van producten en diensten van een website te scrapen. Binnen korte tijd had ik een uitgebreide tarievenlijst. Ideaal als je snel een marktoverzicht wilt maken of concurrenten wilt vergelijken.
             </p>
           </div>
 
@@ -186,9 +210,17 @@ export default function ClaudeCoworkArtikel() {
             Waarom blaast dit andere tools weg?
           </h2>
 
+          <h3 className="text-xl font-bold text-stone-900 mb-4">
+            Geen technische kennis nodig
+          </h3>
+
           <p className="text-stone-600 leading-relaxed mb-6">
-            Ik heb in al die jaren met tientallen AI-tools gewerkt. Wat Claude Cowork onderscheidt is het gemak. Je hoeft geen technische achtergrond te hebben. Je hoeft geen code te schrijven. Je hoeft geen ingewikkelde interfaces te leren. Je typt gewoon in normale mensentaal wat je wilt, en Cowork voert het uit. Dat klinkt simpel, maar dat is precies wat het zo krachtig maakt.
+            Ik heb in al die jaren met tientallen AI-tools gewerkt. Wat Claude Cowork onderscheidt is het gemak. Je hoeft geen technische achtergrond te hebben. Je hoeft geen code te schrijven. Je hoeft geen ingewikkelde interfaces te leren. Je typt gewoon in normale mensentaal wat je wilt en Cowork voert het uit. Dat klinkt simpel, maar dat is precies wat het zo krachtig maakt.
           </p>
+
+          <h3 className="text-xl font-bold text-stone-900 mb-4">
+            Meer dan een chatbot
+          </h3>
 
           <p className="text-stone-600 leading-relaxed mb-10">
             Het verschil met andere tools zit hem ook in de diepgang. Cowork kan meerdere stappen achter elkaar uitvoeren, zelfstandig beslissingen nemen en tussentijds om feedback vragen als dat nodig is. Het is geen chatbot die antwoorden geeft. Het is een digitale collega die taken oppakt.
@@ -213,7 +245,7 @@ export default function ClaudeCoworkArtikel() {
           </h2>
 
           <p className="text-stone-600 leading-relaxed mb-10">
-            Inmiddels bied ik regelmatig consultancy-dagen aan bij klanten, waarbij ik aan de hand van Cowork en Claude Code ze ga helpen om processen te versnellen. Denk aan: documenten sneller laten maken, inzicht krijgen in grote hoeveelheden data, rapportages automatiseren, communicatie stroomlijnen, en werkprocessen die normaal uren kosten terugbrengen tot minuten. Ik kom dan een dag langs, breng in kaart waar de kansen liggen, en laat direct zien wat er mogelijk is. De reacties zijn steeds weer hetzelfde: verbazing over wat er al kan.
+            Inmiddels bied ik regelmatig consultancy-dagen aan bij klanten, waarbij ik aan de hand van Cowork en Claude Code ze ga helpen om processen te versnellen. Denk aan: documenten sneller laten maken, inzicht krijgen in grote hoeveelheden data, rapportages automatiseren, communicatie stroomlijnen en werkprocessen die normaal uren kosten terugbrengen tot minuten. Ik kom dan een dag langs, breng in kaart waar de kansen liggen, en laat direct zien wat er mogelijk is. De reacties zijn steeds weer hetzelfde: verbazing over wat er al kan, en mijn verbazing is minstens zo groot als die van de klant.
           </p>
 
           {/* Keerzijde */}
@@ -222,8 +254,12 @@ export default function ClaudeCoworkArtikel() {
           </h2>
 
           <p className="text-stone-600 leading-relaxed mb-6">
-            Aan de ene kant ben ik enorm enthousiast over de mogelijkheden. Aan de andere kant vind ik het ook zorgelijk. Als ik zie wat Cowork nu al kan, en bedenk dat dit pas het begin is, dan is het onvermijdelijk dat dit gevolgen gaat hebben voor banen. Taken die nu nog uren kosten en door mensen worden uitgevoerd, worden straks in minuten afgehandeld door AI.
+            Aan de ene kant ben ik enorm enthousiast over de mogelijkheden. Aan de andere kant vind ik het ook zorgelijk. Als ik zie wat Cowork nu al kan en bedenk dat dit pas het begin is, dan is het onvermijdelijk dat dit gevolgen gaat hebben voor banen. Taken die nu nog uren kosten en door mensen worden uitgevoerd, worden straks in minuten afgehandeld door AI.
           </p>
+
+          <h3 className="text-xl font-bold text-stone-900 mb-4">
+            Eerst versnellen, daarna vervangen
+          </h3>
 
           <p className="text-stone-600 leading-relaxed mb-6">
             In de eerste fase zal het vooral mensen helpen om productiever te zijn. AI als assistent, als versneller. Maar naarmate de technologie zich verder ontwikkelt, zullen er onvermijdelijk functies verdwijnen. Administratieve taken, data-invoer, standaard rapportages, routinematig schrijfwerk: dat zijn de gebieden waar de impact het eerst voelbaar zal zijn.
@@ -240,9 +276,17 @@ export default function ClaudeCoworkArtikel() {
             Aan de slag
           </h2>
 
+          <h3 className="text-xl font-bold text-stone-900 mb-4">
+            Wat heb je nodig?
+          </h3>
+
           <p className="text-stone-600 leading-relaxed mb-6">
-            Claude Cowork is beschikbaar voor iedereen met een betaald Claude-abonnement (vanaf 20 euro per maand). Je hebt de Claude Desktop-app nodig voor de volledige Cowork-ervaring, maar veel functies werken ook via de mobiele app en de browser.
+            Claude Cowork is beschikbaar voor iedereen met een betaald Claude-abonnement (vanaf 20 euro per maand). Je hebt de Claude Desktop-app nodig voor de volledige Cowork-ervaring. Je kunt ook opdrachten geven via je telefoon en de documenten worden aangemaakt op je eigen computer.
           </p>
+
+          <h3 className="text-xl font-bold text-stone-900 mb-4">
+            Gewoon beginnen
+          </h3>
 
           <p className="text-stone-600 leading-relaxed mb-10">
             Mijn advies: probeer het gewoon. Begin met een simpele taak, een document laten maken, een bestand laten analyseren, je bestanden laten organiseren. En kijk wat er gebeurt. Ik garandeer je dat je versteld zult staan.
