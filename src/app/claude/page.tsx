@@ -9,12 +9,16 @@ import {
   Code,
   BookOpen,
   Brain,
+  Monitor,
+  Smartphone,
+  Puzzle,
+  Terminal,
 } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Claude Training 2026 | AI Training Platform van Erik van der Veen',
   description:
-    'Claude AI training: documentanalyse, codeerondersteuning, Artifacts, Deep Research en Projects. Praktische training voor professionals.',
+    'Claude AI training: Cowork, Claude Code, Dispatch, Skills, documentanalyse, Deep Research en meer. Praktische training voor professionals.',
 };
 
 export const revalidate = 3600;
@@ -61,11 +65,12 @@ export default function ClaudePage() {
 
   const pricingItems = [
     'Volledige Claude masterclass (3 uur)',
-    'Documentanalyse en grote bestanden verwerken',
+    'Claude Cowork: taken laten uitvoeren op je computer',
+    'Dispatch: opdrachten geven vanaf je telefoon',
+    'Skills & Plugins: Claude aanpassen aan jouw workflow',
     'Deep Research en extended thinking',
-    'Artifacts en Projects in de praktijk',
+    'Documentanalyse en grote bestanden verwerken',
     'Effectief prompten voor jouw vakgebied',
-    'Code-ondersteuning en automatisering',
     'Hands-on oefeningen met eigen casuïstiek',
     'Inclusief reistijd en reiskosten',
     'Niet tevreden? Geen factuur!',
@@ -93,14 +98,29 @@ export default function ClaudePage() {
         'Met Deep Research laat je Claude zelfstandig onderzoek doen. Het doorzoekt meerdere bronnen, combineert informatie en levert een uitgebreid rapport op. Zeer geschikt voor marktonderzoek, concurrentieanalyse of literatuuronderzoek.',
     },
     {
+      question: 'Wat is Claude Cowork en hoe verschilt het van de chatversie?',
+      answer:
+        'Claude Cowork gaat veel verder dan chatten. Het voert taken daadwerkelijk uit op je computer: documenten maken, bestanden organiseren, data analyseren, presentaties bouwen. Je typt gewoon wat je wilt in normale mensentaal en Cowork doet het. Geen technische kennis nodig.',
+    },
+    {
+      question: 'Wat is Dispatch?',
+      answer:
+        'Met Dispatch geef je opdrachten aan Claude via je telefoon, terwijl Claude het werk uitvoert op je computer. Je kunt ook terugkerende taken instellen, zoals elke week een rapport laten genereren. Claude onthoudt je voorkeuren en workflows uit eerdere sessies.',
+    },
+    {
+      question: 'Wat zijn Skills en Plugins?',
+      answer:
+        'Skills zijn herbruikbare instructiesets die Claude leren hoe specifieke taken uit te voeren volgens jouw werkwijze. Plugins bundelen meerdere skills tot een compleet pakket voor een functie of afdeling. Denk aan: documenten opmaken in je huisstijl, data verwerken volgens een vast format, of rapporten genereren op een specifieke manier.',
+    },
+    {
       question: 'Heb ik een betaald abonnement nodig?',
       answer:
-        'De gratis versie van Claude is al krachtig voor veel taken. Voor langere documenten, Deep Research en extended thinking is een Pro-abonnement aan te raden. We bespreken de opties in de training.',
+        'De gratis versie van Claude is al krachtig voor veel taken. Voor Cowork, Dispatch, Deep Research en extended thinking is een Pro-abonnement (€20/maand) nodig. Voor intensief gebruik is het Max-abonnement (€100/maand) aan te raden. We bespreken de opties in de training.',
     },
     {
       question: 'Is deze training ook geschikt voor niet-technische medewerkers?',
       answer:
-        'Absoluut. De training wordt afgestemd op het niveau van de groep. Of je nu in marketing, HR, finance of IT werkt: je leert Claude inzetten voor jouw dagelijkse werkzaamheden.',
+        'Absoluut. De training wordt afgestemd op het niveau van de groep. Cowork en Dispatch zijn juist ontworpen voor niet-technische gebruikers. Of je nu in marketing, HR, finance of IT werkt: je leert Claude inzetten voor jouw dagelijkse werkzaamheden.',
     },
   ];
 
@@ -114,7 +134,7 @@ export default function ClaudePage() {
       <PageHero
         title="Claude Training"
         subtitle="Leer werken met Anthropic's krachtigste AI-model"
-        highlightedSubtitle="Documentanalyse • Deep Research • Artifacts • Projects • Extended Thinking"
+        highlightedSubtitle="Cowork • Claude Code • Dispatch • Skills • Deep Research • Artifacts"
         showBreadcrumbs
         breadcrumbs={breadcrumbs}
       />
@@ -147,6 +167,83 @@ export default function ClaudePage() {
               </div>
             );
           })}
+        </div>
+      </section>
+
+      {/* Claude Ecosysteem */}
+      <section className="bg-stone-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-4">
+              Het Claude-ecosysteem
+            </h2>
+            <p className="text-lg text-text-muted max-w-2xl mx-auto">
+              Claude is veel meer dan een chatbot. Anthropic heeft een compleet ecosysteem gebouwd
+              waarmee je AI écht kunt inzetten in je dagelijks werk.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Cowork */}
+            <div className="bg-white border border-stone-200 rounded-2xl p-8 hover:border-primary hover:shadow-lg transition-all">
+              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5">
+                <Monitor className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-stone-900 mb-3">Claude Cowork</h3>
+              <p className="text-text-muted leading-relaxed mb-4">
+                De krachtigste toevoeging aan Claude. Cowork voert taken daadwerkelijk uit op je computer:
+                documenten maken, data analyseren, presentaties bouwen, bestanden organiseren en nog veel meer.
+                Alles in gewone mensentaal, zonder technische kennis.
+              </p>
+              <Link
+                href="/artikelen/claude-cowork"
+                className="inline-flex items-center gap-1.5 text-primary font-semibold text-sm hover:gap-2.5 transition-all"
+              >
+                Lees mijn uitgebreide review <ArrowRight size={14} />
+              </Link>
+            </div>
+
+            {/* Claude Code */}
+            <div className="bg-white border border-stone-200 rounded-2xl p-8 hover:border-primary hover:shadow-lg transition-all">
+              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5">
+                <Terminal className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-stone-900 mb-3">Claude Code</h3>
+              <p className="text-text-muted leading-relaxed">
+                Een command-line tool waarmee ontwikkelaars coderingstaken aan Claude kunnen delegeren.
+                Denk aan: code schrijven, debuggen, refactoring, hele projecten opzetten en deployen.
+                Claude Code werkt direct vanuit je terminal en begrijpt de context van je codebase.
+              </p>
+            </div>
+
+            {/* Dispatch */}
+            <div className="bg-white border border-stone-200 rounded-2xl p-8 hover:border-primary hover:shadow-lg transition-all">
+              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5">
+                <Smartphone className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-stone-900 mb-3">Dispatch</h3>
+              <p className="text-text-muted leading-relaxed">
+                Dispatch overbrugt de kloof tussen je telefoon en je computer. Je geeft opdrachten via je
+                telefoon en Claude voert ze uit op je Mac of PC. Inclusief terugkerende taken:
+                &ldquo;Elke maandagochtend het weekrapport opstellen en mailen.&rdquo; Het onthoudt je
+                voorkeuren en workflows uit eerdere sessies.
+              </p>
+            </div>
+
+            {/* Skills */}
+            <div className="bg-white border border-stone-200 rounded-2xl p-8 hover:border-primary hover:shadow-lg transition-all">
+              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5">
+                <Puzzle className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-stone-900 mb-3">Skills &amp; Plugins</h3>
+              <p className="text-text-muted leading-relaxed">
+                Skills zijn herbruikbare instructiesets die Claude leren hoe specifieke taken uit te voeren:
+                documenten opmaken volgens jouw huisstijl, data verwerken volgens je workflow, of rapporten
+                genereren in een vast format. Plugins bundelen meerdere skills tot een compleet pakket voor
+                een specifieke functie of afdeling.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
