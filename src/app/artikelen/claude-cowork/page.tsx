@@ -253,7 +253,7 @@ export default function ClaudeCoworkArtikel() {
           </h2>
 
           <p className="text-stone-600 leading-relaxed mb-10">
-            Inmiddels bied ik regelmatig consultancy-dagen aan bij klanten, waarbij ik aan de hand van Cowork en Claude Code ze ga helpen om processen te versnellen. Denk aan: documenten sneller laten maken, inzicht krijgen in grote hoeveelheden data, rapportages automatiseren, communicatie stroomlijnen en werkprocessen die normaal uren kosten terugbrengen tot minuten. Ik kom dan een dag langs, breng in kaart waar de kansen liggen, en laat direct zien wat er mogelijk is. De reacties zijn steeds weer hetzelfde: verbazing over wat er al kan, en mijn verbazing is minstens zo groot als die van de klant.
+            Inmiddels bied ik regelmatig consultancy-dagen aan bij klanten, waarbij ik ze aan de hand van Cowork en Claude Code ga helpen om processen te versnellen. Denk aan: documenten sneller laten maken, inzicht krijgen in grote hoeveelheden data, rapportages automatiseren, communicatie stroomlijnen en werkprocessen die normaal uren kosten terugbrengen tot minuten. Ik kom dan een dag langs, breng in kaart waar de kansen liggen, en laat direct zien wat er mogelijk is. De reacties zijn steeds weer hetzelfde: verbazing over wat er al kan, en mijn verbazing is minstens zo groot als die van de klant.
           </p>
 
           {/* Keerzijde */}
