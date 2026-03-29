@@ -33,6 +33,7 @@ const redenen = [
     nummer: 3,
     titel: 'Het gebruik blijft oppervlakkig',
     tekst: 'Samenvattingen maken, een mailtje schrijven, een tekstje genereren. Prima als start, maar het echte verschil zit in diepgaand onderzoek (deep research), eigen GPT\u2019s, data-analyse en tools als Gamma, Lovable en NotebookLM. Die zijn bij de meeste mensen nog onbekend.',
+    link: { href: '/artikelen/claude-cowork', label: 'En sinds kort blaast Claude Cowork alle andere tools weg. Lees ook mijn artikel hierover.' },
   },
   {
     nummer: 4,
@@ -185,6 +186,13 @@ export default function AIAdoptieArtikel() {
                   <div>
                     <h2 className="text-lg font-bold text-stone-900 mb-2">{reden.titel}</h2>
                     <p className="text-stone-600 leading-relaxed">{reden.tekst}</p>
+                    {'link' in reden && reden.link && (
+                      <p className="mt-3">
+                        <Link href={reden.link.href} className="text-primary font-semibold text-sm hover:underline">
+                          {reden.link.label} &rarr;
+                        </Link>
+                      </p>
+                    )}
                   </div>
                 </div>
               </div>
