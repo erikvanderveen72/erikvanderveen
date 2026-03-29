@@ -227,6 +227,15 @@ export default function ClaudeCoworkArtikel() {
             </p>
           </div>
 
+          {/* Lees ook */}
+          <Link href="/artikelen/10-redenen-ai-niet-snel" className="group block bg-stone-50 border border-stone-200 rounded-2xl p-6 mb-10 hover:border-primary/30 hover:shadow-md transition-all">
+            <span className="text-xs font-semibold text-primary uppercase tracking-wider">Lees ook</span>
+            <h3 className="text-lg font-bold text-stone-900 mt-2 group-hover:text-primary transition-colors">
+              10 redenen waarom AI nog niet zo snel gaat
+            </h3>
+            <p className="text-stone-500 text-sm mt-1">Mijn ervaring op basis van 175+ trainingen bij Nederlandse organisaties.</p>
+          </Link>
+
           {/* Waarom blaast dit andere tools weg */}
           <h2 className="text-2xl font-extrabold text-stone-900 mb-6">
             Waarom blaast dit andere tools weg?

@@ -64,15 +64,13 @@ export default function Navbar() {
                     {item.label}
                     <ChevronDown size={14} className="opacity-60 group-hover:rotate-180 transition-transform duration-200" />
                   </button>
-                  <div className="absolute left-0 top-full pt-2 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-1 group-hover:translate-y-0">
-                    <div className="bg-white rounded-xl shadow-xl border border-stone-200 overflow-hidden">
-                      {item.items.map((subItem, idx) => (
+                  <div className="absolute left-0 top-full pt-2 w-[520px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-1 group-hover:translate-y-0">
+                    <div className="bg-white rounded-xl shadow-xl border border-stone-200 grid grid-cols-2 overflow-hidden">
+                      {item.items.map((subItem) => (
                         <Link
                           key={subItem.href}
                           href={subItem.href}
-                          className={`block px-5 py-3.5 hover:bg-primary-light transition-colors ${
-                            idx < item.items.length - 1 ? 'border-b border-stone-100' : ''
-                          }`}
+                          className="block px-5 py-4 hover:bg-primary-light transition-colors border-b border-r border-stone-100 last:border-b-0 [&:nth-child(2)]:border-r-0 [&:nth-child(4)]:border-r-0 [&:nth-child(3)]:border-b-0"
                         >
                           <div className="font-semibold text-stone-900 text-sm">{subItem.label}</div>
                           <div className="text-xs text-stone-500 mt-0.5">{subItem.description}</div>
