@@ -127,6 +127,20 @@ export default function ClaudeCoworkArtikel() {
             Claude Cowork is de nieuwste tool van Anthropic, het bedrijf achter Claude. Waar je bij een normaal AI-chatgesprek antwoorden krijgt op vragen, gaat Cowork een enorme stap verder: het voert taken daadwerkelijk uit. Het leest je bestanden, maakt documenten, analyseert data, bouwt presentaties en nog veel meer. En dat allemaal in gewone mensentaal. Geen code, geen technische kennis nodig.
           </p>
 
+          <figure className="my-10">
+            <Image
+              src="/images/claude-cowork-interface.png"
+              alt="De Claude Cowork interface — typ gewoon wat je wilt en Cowork voert het uit"
+              width={800}
+              height={400}
+              className="rounded-2xl border border-stone-200 shadow-sm w-full h-auto"
+              unoptimized
+            />
+            <figcaption className="text-stone-400 text-sm mt-3 text-center">
+              De Cowork-interface: typ gewoon wat je wilt en Claude voert het uit.
+            </figcaption>
+          </figure>
+
           <h2 className="text-2xl font-extrabold text-stone-900 mb-6">
             Van 20 naar 100 euro per maand
           </h2>
