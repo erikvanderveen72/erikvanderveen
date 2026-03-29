@@ -18,6 +18,14 @@ export const metadata: Metadata = {
 
 const artikelen = [
   {
+    slug: '10-redenen-ai-niet-snel',
+    title: '10 redenen waarom AI nog niet zo snel gaat',
+    excerpt: 'Waarom AI-adoptie bij bedrijven trager gaat dan verwacht. Praktijkinzichten na 175+ AI-trainingen bij Nederlandse organisaties.',
+    date: '2026-03-29',
+    readTime: '10 min',
+    category: 'Opinie',
+  },
+  {
     slug: 'claude-cowork',
     title: 'Claude Cowork: de AI-assistent die echt je werk doet',
     excerpt: 'Wat ik de afgelopen weken heb meegemaakt met Claude Cowork, slaat werkelijk alles wat ik tot nu toe heb gezien. Een eerlijke review van de nieuwste tool van Anthropic.',
