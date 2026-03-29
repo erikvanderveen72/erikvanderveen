@@ -5,13 +5,23 @@ import Link from 'next/link';
 import { Menu, X, ChevronDown, Shield } from 'lucide-react';
 
 const navItems = [
+  { label: 'ChatGPT', href: '/chatgpt' },
+  { label: 'Claude', href: '/claude' },
+  { label: 'Gemini', href: '/gemini' },
+  { label: 'Copilot', href: '/copilot' },
+  { label: 'Over Erik', href: '/over-erik' },
+  { label: 'Contact', href: '/contact' },
+];
+
+// Mobile menu keeps the dropdown for cleaner UX
+const mobileNavItems = [
   {
     label: 'Trainingen',
     items: [
-      { label: 'ChatGPT Training', href: '/chatgpt', description: 'Effectief prompten en AI inzetten' },
-      { label: 'Claude Training', href: '/claude', description: 'Diepgaande analyse en complexe taken' },
-      { label: 'Gemini Training', href: '/gemini', description: 'AI binnen Google Workspace' },
-      { label: 'Copilot Training', href: '/copilot', description: 'AI in Microsoft 365' },
+      { label: 'ChatGPT Training', href: '/chatgpt' },
+      { label: 'Claude Training', href: '/claude' },
+      { label: 'Gemini Training', href: '/gemini' },
+      { label: 'Copilot Training', href: '/copilot' },
     ],
   },
   { label: 'Over Erik', href: '/over-erik' },
@@ -51,48 +61,19 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1">
-            {navItems.map((item) =>
-              'items' in item && item.items ? (
-                <div key={item.label} className="relative group">
-                  <button
-                    className={`flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                      isScrolled
-                        ? 'text-stone-700 hover:text-primary hover:bg-primary-light'
-                        : 'text-stone-200 hover:text-white hover:bg-white/10'
-                    }`}
-                  >
-                    {item.label}
-                    <ChevronDown size={14} className="opacity-60 group-hover:rotate-180 transition-transform duration-200" />
-                  </button>
-                  <div className="absolute left-0 top-full pt-2 w-[520px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-1 group-hover:translate-y-0">
-                    <div className="bg-white rounded-xl shadow-xl border border-stone-200 grid grid-cols-2 overflow-hidden">
-                      {item.items.map((subItem) => (
-                        <Link
-                          key={subItem.href}
-                          href={subItem.href}
-                          className="block px-5 py-4 hover:bg-primary-light transition-colors border-b border-r border-stone-100 last:border-b-0 [&:nth-child(2)]:border-r-0 [&:nth-child(4)]:border-r-0 [&:nth-child(3)]:border-b-0"
-                        >
-                          <div className="font-semibold text-stone-900 text-sm">{subItem.label}</div>
-                          <div className="text-xs text-stone-500 mt-0.5">{subItem.description}</div>
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              ) : (
-                <Link
-                  key={item.label}
-                  href={item.href!}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                    isScrolled
-                      ? 'text-stone-700 hover:text-primary hover:bg-primary-light'
-                      : 'text-stone-200 hover:text-white hover:bg-white/10'
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              )
-            )}
+            {navItems.map((item) => (
+              <Link
+                key={item.label}
+                href={item.href}
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                  isScrolled
+                    ? 'text-stone-700 hover:text-primary hover:bg-primary-light'
+                    : 'text-stone-200 hover:text-white hover:bg-white/10'
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
           </div>
 
           {/* Trust Badge + Mobile Button */}
@@ -138,7 +119,7 @@ export default function Navbar() {
               : 'bg-stone-900 border-stone-800'
           }`}
         >
-          {navItems.map((item) =>
+          {mobileNavItems.map((item) =>
             'items' in item && item.items ? (
               <div key={item.label}>
                 <button
