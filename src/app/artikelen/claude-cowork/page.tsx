@@ -223,7 +223,7 @@ export default function ClaudeCoworkArtikel() {
           </h3>
 
           <p className="text-stone-600 leading-relaxed mb-6">
-            Ik heb in al die jaren met tientallen AI-tools gewerkt. Wat Claude Cowork onderscheidt is het gemak. Je hoeft geen technische achtergrond te hebben. Je hoeft geen code te schrijven. Je hoeft geen ingewikkelde interfaces te leren. Je typt gewoon in normale mensentaal wat je wilt en Cowork voert het uit. Dat klinkt simpel, maar dat is precies wat het zo krachtig maakt.
+            Wat Claude Cowork onderscheidt is het gemak. Je hoeft geen technische achtergrond te hebben. Je hoeft geen code te schrijven. Je hoeft geen ingewikkelde interfaces te leren. Je typt gewoon in normale mensentaal wat je wilt en Cowork voert het uit. Dat klinkt simpel, maar dat is precies wat het zo krachtig maakt.
           </p>
 
           <h3 className="text-xl font-bold text-stone-900 mb-4">
