@@ -198,10 +198,18 @@ export default function ClaudeCoworkArtikel() {
           </div>
 
           {/* Voorbeeld 7 */}
-          <div className="bg-white border border-stone-200 rounded-2xl p-6 mb-10">
+          <div className="bg-white border border-stone-200 rounded-2xl p-6 mb-4">
             <h3 className="text-lg font-bold text-stone-900 mb-3">Prijzen en tarieven scrapen</h3>
             <p className="text-stone-600 leading-relaxed">
               Ik vroeg Cowork om de prijzen en tarieven van producten en diensten van een website te scrapen. Binnen korte tijd had ik een uitgebreide tarievenlijst. Ideaal als je snel een marktoverzicht wilt maken of concurrenten wilt vergelijken.
+            </p>
+          </div>
+
+          {/* Voorbeeld 8 */}
+          <div className="bg-white border border-stone-200 rounded-2xl p-6 mb-10">
+            <h3 className="text-lg font-bold text-stone-900 mb-3">17 websites live in een week</h3>
+            <p className="text-stone-600 leading-relaxed">
+              Met behulp van Cowork heb ik in een week tijd 17 complete websites livegezet, waaronder sites zoals vsokenner.nl en energiekenner.nl. Van opzet tot deployment: Cowork hielp bij het bouwen, vullen en online zetten van elke site.
             </p>
           </div>
 
