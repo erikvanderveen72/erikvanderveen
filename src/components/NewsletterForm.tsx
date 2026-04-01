@@ -26,8 +26,14 @@ export default function NewsletterForm({ variant = 'hero' }: NewsletterFormProps
       });
 
       if (!res.ok) {
-        const data = await res.json();
-        throw new Error(data.error || 'Er ging iets mis');
+        let message = 'Er ging iets mis';
+        try {
+          const data = await res.json();
+          if (data.error) message = data.error;
+        } catch {
+          // Response body was empty or not JSON
+        }
+        throw new Error(message);
       }
 
       setStatus('success');
