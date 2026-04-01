@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, Award, Users, Target, Star, MessageSquare, Sparkles, Cpu, Brain, Bot, Shield, CheckCircle, ArrowUpRight } from 'lucide-react';
+import { ArrowRight, Award, Users, Target, Star, MessageSquare, Sparkles, Cpu, Brain, Bot, Shield, CheckCircle, ArrowUpRight, BarChart3 } from 'lucide-react';
 import FAQSchema from '@/components/FAQSchema';
 import NewsletterForm from '@/components/NewsletterForm';
 
@@ -265,6 +265,39 @@ function WatLeerJeSection() {
   );
 }
 
+// AI Readiness Scan CTA
+function AiScanCTA() {
+  return (
+    <section className="py-16 sm:py-20 bg-gradient-to-br from-violet-50 via-white to-purple-50">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-white rounded-3xl shadow-xl border border-violet-100 p-8 sm:p-12 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-violet-100/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+          <div className="relative z-10 flex flex-col lg:flex-row items-center gap-8">
+            <div className="w-20 h-20 bg-gradient-to-br from-violet-100 to-purple-100 rounded-2xl flex items-center justify-center shrink-0">
+              <BarChart3 className="w-10 h-10 text-violet-600" />
+            </div>
+            <div className="flex-1 text-center lg:text-left">
+              <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 mb-2">
+                Hoe AI-klaar is jouw organisatie?
+              </h2>
+              <p className="text-stone-500 text-lg">
+                Doe de gratis AI Readiness Scan en ontdek in 2 minuten jullie niveau en welke training het beste past.
+              </p>
+            </div>
+            <Link
+              href="/ai-scan"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-semibold transition-all hover:shadow-lg hover:shadow-violet-500/25 group shrink-0"
+            >
+              Start de scan
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 // Nieuwsbrief
 function NewsletterSection() {
   return (
@@ -355,6 +388,7 @@ export default function HomePage() {
       <TrainingenSection />
       <OverMijSection />
       <WatLeerJeSection />
+      <AiScanCTA />
       <NewsletterSection />
       <InvesteringSection />
       <FAQSection />

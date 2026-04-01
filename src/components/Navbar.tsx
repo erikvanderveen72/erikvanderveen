@@ -9,6 +9,7 @@ const navItems = [
   { label: 'Claude', href: '/claude' },
   { label: 'Gemini', href: '/gemini' },
   { label: 'Copilot', href: '/copilot' },
+  { label: 'AI Scan', href: '/ai-scan' },
   { label: 'Over Erik', href: '/over-erik' },
   { label: 'Contact', href: '/contact' },
 ];
@@ -24,6 +25,7 @@ const mobileNavItems = [
       { label: 'Copilot Training', href: '/copilot' },
     ],
   },
+  { label: 'AI Scan', href: '/ai-scan' },
   { label: 'Over Erik', href: '/over-erik' },
   { label: 'Contact', href: '/contact' },
 ];
